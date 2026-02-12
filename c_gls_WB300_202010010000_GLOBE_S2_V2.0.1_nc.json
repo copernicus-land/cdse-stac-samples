@@ -1,0 +1,226 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-wb300-globe-s2",
+  "id": "c_gls_WB300_202010010000_GLOBE_S2_V2.0.1_nc",
+  "properties": {
+    "created": "2020-12-10T10:22:21.409707Z",
+    "updated": "2025-07-17T00:25:33.566169Z",
+    "published": "2025-04-07T12:44:52.030619Z",
+    "eopf:origin_datetime": "2020-12-10T10:22:21.409707Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2020-10-01T00:00:00.000000Z",
+    "start_datetime": "2020-10-01T00:00:00.000000Z",
+    "end_datetime": "2020-10-31T23:59:59.000000Z",
+    "instruments": [
+      "msi"
+    ],
+    "gsd": 300,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          56000
+        ]
+      },
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          144000
+        ]
+      },
+      "time": {
+        "type": "temporal",
+        "description": "Time",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2010-01-01T05:08:56.000000Z"
+        ]
+      }
+    },
+    "cube:variables": {
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          18536
+        ],
+        "description": "Time",
+        "unit": "days since 1970-01-01",
+        "data_type": "uint32"
+      },
+      "WB": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Water Body 300M",
+        "data_type": "uint8"
+      },
+      "QUAL": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Water Body Quality 300M",
+        "data_type": "uint8"
+      }
+    },
+    "product:type": "water_bodies",
+    "processing:level": "L3",
+    "proj:shape": [
+      56000,
+      144000
+    ],
+    "constellation": "sentinel-2",
+    "product:timeliness": "P1M",
+    "product:timeliness_category": "OFFL",
+    "processing:version": "V2.0.1",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -60.0,
+    179.9999999,
+    80.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          80.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_WB300_202010010000_GLOBE_S2_V2.0.1_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "Monthly Water Bodies 300M: GLOBE 2020-10-01T00:00:00Z",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d501105aaaae7a27a56881655dbf0ad98faefd",
+      "file:size": 125167833,
+      "file:local_path": "c_gls_WB300_202010010000_GLOBE_S2_V2.0.1_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/water_bodies/wb_global_300m_monthly_v2/2020/10/01/c_gls_WB300_202010010000_GLOBE_S2_V2.0.1_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(698ab554-d101-4def-af84-b320fcf3bc80)/Nodes(c_gls_WB300_202010010000_GLOBE_S2_V2.0.1_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(water_bodies)/Nodes(wb_global_300m_monthly_v2)/Nodes(2020)/Nodes(10)/Nodes(01)/Nodes(c_gls_WB300_202010010000_GLOBE_S2_V2.0.1_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

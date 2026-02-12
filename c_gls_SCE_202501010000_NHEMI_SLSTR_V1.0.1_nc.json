@@ -1,0 +1,218 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-sce-nhemi-viirs-slstr",
+  "id": "c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_nc",
+  "properties": {
+    "created": "2025-01-03T11:57:00.000000Z",
+    "updated": "2025-05-16T07:38:56.292661Z",
+    "published": "2025-05-16T07:38:56.292661Z",
+    "eopf:origin_datetime": "2025-01-03T11:57:00.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2025-01-01T00:28:07.000000Z",
+    "start_datetime": "2025-01-01T00:28:07.000000Z",
+    "end_datetime": "2025-01-01T23:35:10.000000Z",
+    "instruments": [
+      "slstr"
+    ],
+    "gsd": 1000,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "time": {
+        "type": "temporal",
+        "description": "time",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2010-01-08T14:37:36.000000Z"
+        ]
+      },
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          5900
+        ]
+      },
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          36000
+        ]
+      }
+    },
+    "cube:variables": {
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          657456.0
+        ],
+        "description": "time",
+        "unit": "hours since 1950-01-01 00:00:00",
+        "data_type": "other"
+      },
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "sce": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Snow Cover Extent",
+        "unit": "percent",
+        "nodata": 255,
+        "data_type": "int16"
+      }
+    },
+    "product:type": "snow_cover_extent",
+    "processing:level": "L3",
+    "proj:shape": [
+      5900,
+      36000
+    ],
+    "constellation": "sentinel-3",
+    "product:timeliness": "P1D",
+    "product:timeliness_category": "NRT",
+    "processing:version": "V1.0.1",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    25.0,
+    179.9999999,
+    84.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          84.0
+        ],
+        [
+          -179.9999999,
+          84.0
+        ],
+        [
+          -179.9999999,
+          25.0
+        ],
+        [
+          179.9999999,
+          25.0
+        ],
+        [
+          179.9999999,
+          84.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "Fractional Snow Cover, northern hemisphere, Sentinel-3 SLSTR (0.01deg., 2025-01-01)",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d50110ebfac9356767436b3afccf9b0452cb3e",
+      "file:size": 11298638,
+      "file:local_path": "c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/snow_cover_extent/sce_northernhemisphere_1km_daily_v1/2025/01/01/c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(1c9f08ba-4eee-4784-abde-3a045d798e94)/Nodes(c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(snow_cover_extent)/Nodes(sce_northernhemisphere_1km_daily_v1)/Nodes(2025)/Nodes(01)/Nodes(01)/Nodes(c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

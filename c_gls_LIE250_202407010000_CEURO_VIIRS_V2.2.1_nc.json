@@ -1,0 +1,216 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-lie250-ceuro-viirs",
+  "id": "c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_nc",
+  "properties": {
+    "created": "2024-07-02T00:00:00.000000Z",
+    "updated": "2025-07-16T16:33:45.439250Z",
+    "published": "2025-04-07T13:51:22.971336Z",
+    "eopf:origin_datetime": "2024-07-02T00:00:00.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2024-07-01T00:00:01.000000Z",
+    "start_datetime": "2024-07-01T00:00:01.000000Z",
+    "end_datetime": "2024-07-01T23:59:59.000000Z",
+    "instruments": [
+      "visible infrared imaging radiometer suite (viirs)"
+    ],
+    "gsd": 250,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "time": {
+        "type": "temporal",
+        "description": "time",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2010-01-08T13:24:00.000000Z"
+        ]
+      },
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          24400
+        ]
+      },
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          14800
+        ]
+      }
+    },
+    "cube:variables": {
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          653040.0
+        ],
+        "description": "time",
+        "unit": "Hours since 1950-01-01 00:00:00",
+        "data_type": "other"
+      },
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "LIE": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Lake Ice Extent",
+        "data_type": "int16"
+      }
+    },
+    "product:type": "river_and_lake_ice_extent",
+    "processing:level": "L3",
+    "proj:shape": [
+      14800,
+      24400
+    ],
+    "platform": "noaa-20",
+    "constellation": "jpss",
+    "product:timeliness": "P2D",
+    "product:timeliness_category": "NRT",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -11.0,
+    50.0,
+    35.0,
+    72.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          35.0,
+          72.0
+        ],
+        [
+          -11.0,
+          72.0
+        ],
+        [
+          -11.0,
+          50.0
+        ],
+        [
+          35.0,
+          50.0
+        ],
+        [
+          35.0,
+          72.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "Lake Ice Excent (LIE) 250 m: CEURO 2024-07-01",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d501106319333e8110d14383075c2521d9fb7b",
+      "file:size": 2282957,
+      "file:local_path": "c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/river_and_lake_ice_extent/lie_europe_250m_daily_v2/2024/07/01/c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(9c1107f0-326c-4d81-88ed-125011e3d089)/Nodes(c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(river_and_lake_ice_extent)/Nodes(lie_europe_250m_daily_v2)/Nodes(2024)/Nodes(07)/Nodes(01)/Nodes(c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-lie-nh-nhemi-slstr",
+  "id": "c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc",
+  "properties": {
+    "created": "2021-06-18T00:00:00.000000Z",
+    "updated": "2025-07-16T21:18:03.601495Z",
+    "published": "2025-05-06T15:32:44.315092Z",
+    "eopf:origin_datetime": "2021-06-18T00:00:00.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2021-04-01T00:33:34.000000Z",
+    "start_datetime": "2021-04-01T00:33:34.000000Z",
+    "end_datetime": "2021-04-01T21:42:53.000000Z",
+    "instruments": [
+      "the sea and land surface temperature radiometer (slstr)"
+    ],
+    "gsd": 500,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "time": {
+        "type": "temporal",
+        "description": "time",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2010-01-08T05:29:12.000000Z"
+        ]
+      },
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          72000
+        ]
+      },
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          11800
+        ]
+      }
+    },
+    "cube:variables": {
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          624552.0
+        ],
+        "description": "time",
+        "unit": "Hours since 1950-01-01 00:00:00",
+        "data_type": "other"
+      },
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "LIE": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Pixel classification",
+        "data_type": "int16"
+      },
+      "P": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "GMM predicted posterior probability of the most likely class",
+        "unit": "percent",
+        "data_type": "int16"
+      }
+    },
+    "product:type": "river_and_lake_ice_extent",
+    "processing:level": "L3",
+    "proj:shape": [
+      11800,
+      72000
+    ],
+    "constellation": "sentinel-3",
+    "product:timeliness": "P1D",
+    "product:timeliness_category": "NRT",
+    "processing:version": "V1.1",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    25.0,
+    179.9999999,
+    84.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          84.0
+        ],
+        [
+          -179.9999999,
+          84.0
+        ],
+        [
+          -179.9999999,
+          25.0
+        ],
+        [
+          179.9999999,
+          25.0
+        ],
+        [
+          179.9999999,
+          84.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "Lake Ice Coverage (LIE-NH) 500m: Northern Hemisphere 20210401",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d5011022a7b7b556db19cb7cad29e95362adff",
+      "file:size": 7242253,
+      "file:local_path": "c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/river_and_lake_ice_extent/lie_northernhemisphere_500m_daily_v1/2021/04/01/c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(55c94e7c-d346-41c0-9ef4-53f513036036)/Nodes(c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(river_and_lake_ice_extent)/Nodes(lie_northernhemisphere_500m_daily_v1)/Nodes(2021)/Nodes(04)/Nodes(01)/Nodes(c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

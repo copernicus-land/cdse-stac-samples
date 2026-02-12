@@ -1,0 +1,275 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-lai300-globe-probav-olci",
+  "id": "c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_nc",
+  "properties": {
+    "created": "2025-01-12T14:10:21.275614Z",
+    "updated": "2025-07-17T02:37:13.139267Z",
+    "published": "2025-04-15T09:40:21.246070Z",
+    "eopf:origin_datetime": "2025-01-12T14:10:21.275614Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2024-06-14T00:00:00.000000Z",
+    "start_datetime": "2024-06-14T00:00:00.000000Z",
+    "end_datetime": "2025-01-10T23:59:59.000000Z",
+    "instruments": [
+      "olci"
+    ],
+    "gsd": 300,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          47040
+        ]
+      },
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          120960
+        ]
+      },
+      "time": {
+        "type": "temporal",
+        "description": "Time",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2010-01-01T05:34:58.000000Z"
+        ]
+      }
+    },
+    "cube:variables": {
+      "LAI": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Leaf Area Index 333m",
+        "unit": "m^2/m^2",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "LENGTH_AFTER": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Length of semi-period after product date on LAI 333m",
+        "unit": "days",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "LENGTH_BEFORE": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Length of semi-period before product date on LAI 333m",
+        "unit": "days",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "NOBS": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "leaf_area_index number_of_observations",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag on LAI 333m",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "RMSE": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "RMSE on LAI 333m",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          20098.0
+        ],
+        "description": "Time",
+        "unit": "days since 1970-01-01 00:00:00",
+        "data_type": "other"
+      }
+    },
+    "product:type": "vegetation_properties",
+    "processing:level": "L3",
+    "proj:shape": [
+      47040,
+      120960
+    ],
+    "constellation": "sentinel-3",
+    "product:timeliness": "P5D",
+    "product:timeliness_category": "NRT",
+    "processing:version": "V1.1.2",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -60.0,
+    179.9999999,
+    80.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          80.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "10-daily Leaf Area Index 333M: GLOBE 2025-01-10T00:00:00Z",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d501106a266af04456997c25f943d4466008b0",
+      "file:size": 1242861079,
+      "file:local_path": "c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/lai_global_300m_10daily_v1/2025/01/10/c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(3032ea13-bed6-4789-8a4e-5140277d44b5)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(vegetation_properties)/Nodes(lai_global_300m_10daily_v1)/Nodes(2025)/Nodes(01)/Nodes(10)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

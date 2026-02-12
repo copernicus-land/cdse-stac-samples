@@ -1,0 +1,241 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-ndvi-sts-globe-probav",
+  "id": "c_gls_NDVI-STS_2015-2019-0101_GLOBE_PROBAV_V3.0.1_nc",
+  "properties": {
+    "created": "2021-03-01T17:02:57.011351Z",
+    "updated": "2025-07-18T02:47:22.845181Z",
+    "published": "2025-03-19T14:29:53.655081Z",
+    "eopf:origin_datetime": "2021-03-01T17:02:57.011351Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2015-01-01T00:00:00.000000Z",
+    "start_datetime": "2015-01-01T00:00:00.000000Z",
+    "end_datetime": "2019-12-31T23:59:59.000000Z",
+    "instruments": [
+      "vegetation"
+    ],
+    "gsd": 1000,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          40320
+        ]
+      },
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          15680
+        ]
+      }
+    },
+    "cube:variables": {
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "min": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Minimum Normalized Difference Vegetation Index over time period",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "median": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Median Normalized Difference Vegetation Index over time period",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "max": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Maximum Normalized Difference Vegetation Index over time period",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "mean": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Mean Normalized Difference Vegetation Index over time period",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "stdev": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Standard deviation Normalized Difference Vegetation Index over time period",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "nobs": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "normalized_difference_vegetation_index number_of_observations",
+        "data_type": "uint8"
+      }
+    },
+    "product:type": "vegetation_indices",
+    "processing:level": "L4",
+    "proj:shape": [
+      15680,
+      40320
+    ],
+    "platform": "proba-v",
+    "constellation": "proba-1",
+    "processing:version": "V3.0.1",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -60.0,
+    179.9999999,
+    80.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          80.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_NDVI-STS_2015-2019-0101_GLOBE_PROBAV_V3.0.1_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "Normalized Difference Vegetation Index: Short Term Statistics 1KM: GLOBE 2015-2019 0101",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d50110adcb3c8d4e89cef3ab6a80a8195fb5fb",
+      "file:size": 589660695,
+      "file:local_path": "c_gls_NDVI-STS_2015-2019-0101_GLOBE_PROBAV_V3.0.1_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_indices/ndvi-sts_global_1km_10daily_v3/2015/01/01/c_gls_NDVI-STS_2015-2019-0101_GLOBE_PROBAV_V3.0.1_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(4bb1588a-1309-4af9-b4f2-4cddeb033d5d)/Nodes(c_gls_NDVI-STS_2015-2019-0101_GLOBE_PROBAV_V3.0.1_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(vegetation_indices)/Nodes(ndvi-sts_global_1km_10daily_v3)/Nodes(2015)/Nodes(01)/Nodes(01)/Nodes(c_gls_NDVI-STS_2015-2019-0101_GLOBE_PROBAV_V3.0.1_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

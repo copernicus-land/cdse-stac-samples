@@ -1,0 +1,712 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-toc-globe-s3",
+  "id": "cgl_TOC_20250101000422_X32Y06_S3B_v2.3.4_nc",
+  "properties": {
+    "created": "2025-01-01T10:49:46.000000Z",
+    "updated": "2025-07-16T15:38:32.949636Z",
+    "published": "2025-03-28T10:31:29.223696Z",
+    "eopf:origin_datetime": "2025-01-01T10:49:46.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2025-01-01T00:04:22.000000Z",
+    "start_datetime": "2025-01-01T00:04:22.000000Z",
+    "end_datetime": "2025-01-01T00:07:22.000000Z",
+    "instruments": [
+      "olci",
+      "slstr"
+    ],
+    "gsd": 300,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          3360
+        ]
+      },
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          3360
+        ]
+      }
+    },
+    "cube:variables": {
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "Oa02_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa02",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa02_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa02",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa03_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa03",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa03_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa03",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa04_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa04",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa04_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa04",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa05_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa05",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa05_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa05",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa06_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa06",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa06_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa06",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa07_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa07",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa07_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa07",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa08_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa08",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa08_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa08",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa09_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa09",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa09_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa09",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa10_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa10",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa10_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa10",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa11_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa11",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa11_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa11",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa12_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa12",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa12_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa12",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa16_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa16",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa16_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa16",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa17_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa17",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa17_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa17",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa18_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa18",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa18_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa18",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa21_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for OLCI acquisition band Oa21",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "Oa21_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for OLCI acquisition band Oa21",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S1_an_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for channel S1 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S1_an_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for channel S1 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S2_an_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for channel S2 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S2_an_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for channel S2 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S3_an_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for channel S3 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S3_an_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for channel S3 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S5_an_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for channel S5 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S5_an_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for channel S5 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S6_an_toc": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance for channel S6 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "S6_an_toc_error": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "TOC reflectance error for channel S6 (A stripe grid, nadir view) (500 m)",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "SAA_olci": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "OLCI Solar Azimuth Angle",
+        "unit": "degree",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "SZA_olci": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "OLCI Solar Zenith Angle",
+        "unit": "degree",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "VAA_olci": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "OLCI Viewing Azimuth Angle",
+        "unit": "degree",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "VZA_olci": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "OLCI Viewing Zenith Angle",
+        "unit": "degree",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "SAA_slstr": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "SLSTR Solar Azimuth Angle",
+        "unit": "degree",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "SZA_slstr": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "SLSTR Solar Zenith Angle",
+        "unit": "degree",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "VAA_slstr": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "SLSTR Viewing Azimuth Angle",
+        "unit": "degree",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "VZA_slstr": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "SLSTR Viewing Zenith Angle",
+        "unit": "degree",
+        "nodata": 32767,
+        "data_type": "int16"
+      },
+      "cloud_an": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Cloud mask (A stripe grid, nadir view) (500 m)",
+        "nodata": -1,
+        "data_type": "int16"
+      },
+      "quality_flags": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Classification and quality flags",
+        "data_type": "int32"
+      },
+      "pixel_classif_flags": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "OLCI Idepix Cloud mask",
+        "nodata": -1,
+        "data_type": "int16"
+      },
+      "AC_process_flag": {
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Cloud mask (A stripe grid, nadir view) (500 m)",
+        "nodata": -1,
+        "data_type": "int8"
+      }
+    },
+    "product:type": "top-of-canopy_reflectances",
+    "processing:level": "L2",
+    "proj:shape": [
+      3360,
+      3360
+    ],
+    "platform": "sentinel-3b",
+    "constellation": "sentinel-3",
+    "product:timeliness": "P1D",
+    "product:timeliness_category": "OFFL",
+    "processing:version": "v2.3.4",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -65.0,
+    179.9999999,
+    85.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          85.0
+        ],
+        [
+          -179.9999999,
+          85.0
+        ],
+        [
+          -179.9999999,
+          -65.0
+        ],
+        [
+          179.9999999,
+          -65.0
+        ],
+        [
+          179.9999999,
+          85.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/cgl_TOC_20250101000422_X32Y06_S3B_v2.3.4_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "Sentinel 3B L2 Top Of Canopy Tile X32Y06 at 333m resolution",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d501102b737e2d9f5e8beef5869ac7a6a18e87",
+      "file:size": 163626755,
+      "file:local_path": "cgl_TOC_20250101000422_X32Y06_S3B_v2.3.4_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/top-of-canopy_reflectances/toc_global_300m_daily_v2/2025/01/01/cgl_TOC_20250101000422_X32Y06_S3B_v2.3.4_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(2f01451b-5b83-4e26-a1e8-df56a84bc440)/Nodes(cgl_TOC_20250101000422_X32Y06_S3B_v2.3.4_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(top-of-canopy_reflectances)/Nodes(toc_global_300m_daily_v2)/Nodes(2025)/Nodes(01)/Nodes(01)/Nodes(cgl_TOC_20250101000422_X32Y06_S3B_v2.3.4_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

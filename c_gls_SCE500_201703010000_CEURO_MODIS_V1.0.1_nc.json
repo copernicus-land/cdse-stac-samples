@@ -1,0 +1,219 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-sce500-ceuro-modis",
+  "id": "c_gls_SCE500_201703010000_CEURO_MODIS_V1.0.1_nc",
+  "properties": {
+    "created": "2017-07-14T00:00:00.000000Z",
+    "updated": "2025-07-18T02:02:44.694384Z",
+    "published": "2025-04-07T12:44:56.615862Z",
+    "eopf:origin_datetime": "2017-07-14T00:00:00.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2017-03-01T06:35:00.000000Z",
+    "start_datetime": "2017-03-01T06:35:00.000000Z",
+    "end_datetime": "2017-03-01T11:45:00.000000Z",
+    "instruments": [
+      "modis"
+    ],
+    "gsd": 500,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "time": {
+        "type": "temporal",
+        "description": "time",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2010-01-07T19:32:24.000000Z"
+        ]
+      },
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          7400
+        ]
+      },
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          12200
+        ]
+      }
+    },
+    "cube:variables": {
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          588744.0
+        ],
+        "description": "time",
+        "unit": "hours since 1950-01-01 00:00:00",
+        "data_type": "other"
+      },
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "sce500": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Snow Cover Extent",
+        "unit": "percent",
+        "nodata": 255,
+        "data_type": "int16"
+      }
+    },
+    "product:type": "snow_cover_extent",
+    "processing:level": "L3",
+    "proj:shape": [
+      7400,
+      12200
+    ],
+    "platform": "terra",
+    "constellation": "a-train",
+    "product:timeliness": "P1D",
+    "product:timeliness_category": "NRT",
+    "processing:version": "V1.0.1",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -11.0,
+    50.0,
+    35.0,
+    72.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          35.0,
+          72.0
+        ],
+        [
+          -11.0,
+          72.0
+        ],
+        [
+          -11.0,
+          50.0
+        ],
+        [
+          35.0,
+          50.0
+        ],
+        [
+          35.0,
+          72.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SCE500_201703010000_CEURO_MODIS_V1.0.1_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "Daily Snow Cover Extent: Continental Europe, 2017-03-01",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d50110923f7cc09c771ec049b2d16d3c465c93",
+      "file:size": 180741821,
+      "file:local_path": "c_gls_SCE500_201703010000_CEURO_MODIS_V1.0.1_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/snow_cover_extent/sce_europe_500m_daily_v1/2017/03/01/c_gls_SCE500_201703010000_CEURO_MODIS_V1.0.1_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(82ff4905-46a3-4815-a439-88b0ec3ef0b8)/Nodes(c_gls_SCE500_201703010000_CEURO_MODIS_V1.0.1_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(snow_cover_extent)/Nodes(sce_europe_500m_daily_v1)/Nodes(2017)/Nodes(03)/Nodes(01)/Nodes(c_gls_SCE500_201703010000_CEURO_MODIS_V1.0.1_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

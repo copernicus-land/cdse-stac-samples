@@ -1,0 +1,272 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-lswt-globe-aatsr",
+  "id": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_nc",
+  "properties": {
+    "created": "2025-10-20T15:20:36.269217Z",
+    "updated": "2025-10-21T17:23:30.412679Z",
+    "published": "2025-10-21T17:23:30.412679Z",
+    "eopf:origin_datetime": "2025-10-20T15:20:36.269217Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2010-01-01T00:00:00.000000Z",
+    "start_datetime": "2010-01-01T00:00:00.000000Z",
+    "end_datetime": "2010-01-10T00:00:00.000000Z",
+    "instruments": [
+      "aatsr"
+    ],
+    "gsd": 1000,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          21600
+        ]
+      },
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          43200
+        ]
+      },
+      "time": {
+        "type": "temporal",
+        "description": "reference time of the lswt file",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2039-01-01T00:00:00.000000Z"
+        ]
+      }
+    },
+    "cube:variables": {
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          915148800
+        ],
+        "description": "reference time of the lswt file",
+        "unit": "seconds since 1981-01-01 00:00:00",
+        "data_type": "int32"
+      },
+      "lake_surface_water_temperature": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "lake surface skin temperature",
+        "unit": "Kelvin",
+        "nodata": -32768,
+        "data_type": "int16"
+      },
+      "lswt_uncertainty": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Uncertainty from errors likely to be uncorrelated between LSWTs",
+        "unit": "Kelvin",
+        "nodata": -32768,
+        "data_type": "int16"
+      },
+      "lswt_standard_deviation": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "This is the standard deviation of the observations within the time period.",
+        "unit": "Kelvin",
+        "nodata": -32768,
+        "data_type": "int16"
+      },
+      "quality_level": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "quality levels",
+        "data_type": "int8"
+      },
+      "n_lswt": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "number of LSWT observations contributing to the avarage.",
+        "nodata": -128,
+        "data_type": "int8"
+      },
+      "time_obs": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "observation time",
+        "data_type": "int16"
+      }
+    },
+    "product:type": "lake_surface_water_temperature",
+    "processing:level": "L3",
+    "proj:shape": [
+      21600,
+      43200
+    ],
+    "platform": "envisat",
+    "constellation": "envisat",
+    "processing:version": "1.0.3",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -89.9999999,
+    179.9999999,
+    89.9999999
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          89.9999999
+        ],
+        [
+          -179.9999999,
+          89.9999999
+        ],
+        [
+          -179.9999999,
+          -89.9999999
+        ],
+        [
+          179.9999999,
+          -89.9999999
+        ],
+        [
+          179.9999999,
+          89.9999999
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "CGLOPS AATSR 10 DAYS product",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d50110bea4c436c0aebe8947d4a876abafd25c",
+      "file:size": 23497698,
+      "file:local_path": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_surface_water_temperature/lswt-offline_global_1km_10daily_v1/2010/01/01/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(514dd08d-3f23-4d6d-8c48-058d03771e99)/Nodes(c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(lake_surface_water_temperature)/Nodes(lswt-offline_global_1km_10daily_v1)/Nodes(2010)/Nodes(01)/Nodes(01)/Nodes(c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

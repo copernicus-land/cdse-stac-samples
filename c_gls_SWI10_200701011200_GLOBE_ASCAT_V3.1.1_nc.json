@@ -1,0 +1,495 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-swi10-globe-ascat",
+  "id": "c_gls_SWI10_200701011200_GLOBE_ASCAT_V3.1.1_nc",
+  "properties": {
+    "created": "2018-10-30T10:15:20.468486Z",
+    "updated": "2025-07-18T03:52:42.633078Z",
+    "published": "2025-04-08T12:13:05.630849Z",
+    "eopf:origin_datetime": "2018-10-30T10:15:20.468486Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2006-12-31T12:00:00.000000Z",
+    "start_datetime": "2006-12-31T12:00:00.000000Z",
+    "end_datetime": "2007-01-10T12:00:00.000000Z",
+    "instruments": [
+      "ascat"
+    ],
+    "gsd": 12500,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          1800
+        ]
+      },
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          3600
+        ]
+      },
+      "time": {
+        "type": "temporal",
+        "description": "time",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2010-01-01T03:45:14.000000Z"
+        ]
+      }
+    },
+    "cube:variables": {
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          13514.0
+        ],
+        "description": "time",
+        "unit": "days since 1970-01-01 12:00:00",
+        "data_type": "other"
+      },
+      "VOBS_015": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Percent Valid Observations with T=15",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "VOBS_040": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Percent Valid Observations with T=40",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "VOBS_001": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Percent Valid Observations with T=1",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "VOBS_005": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Percent Valid Observations with T=5",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "VOBS_060": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Percent Valid Observations with T=60",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "VOBS_100": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Percent Valid Observations with T=100",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "VOBS_020": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Percent Valid Observations with T=20",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "VOBS_010": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Percent Valid Observations with T=10",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG_040": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag with T=40",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG_010": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag with T=10",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG_015": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag with T=15",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG_100": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag with T=100",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG_020": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag with T=20",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG_005": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag with T=5",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG_001": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag with T=1",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG_060": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality Flag with T=60",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "SWI_005": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Soil Water Index with T=5",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "SWI_010": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Soil Water Index with T=10",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "SWI_001": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Soil Water Index with T=1",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "SWI_015": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Soil Water Index with T=15",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "SWI_100": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Soil Water Index with T=100",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "SWI_040": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Soil Water Index with T=40",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "SWI_060": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Soil Water Index with T=60",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "SWI_020": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Soil Water Index with T=20",
+        "unit": "%",
+        "nodata": 255,
+        "data_type": "uint8"
+      }
+    },
+    "product:type": "soil_water_index",
+    "processing:level": "L3",
+    "proj:shape": [
+      1800,
+      3600
+    ],
+    "platform": "metop",
+    "constellation": "metop",
+    "product:timeliness": "P3D",
+    "product:timeliness_category": "OFFL",
+    "processing:version": "V3.1.1",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -89.9999999,
+    179.9999999,
+    89.9999999
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          89.9999999
+        ],
+        [
+          -179.9999999,
+          89.9999999
+        ],
+        [
+          -179.9999999,
+          -89.9999999
+        ],
+        [
+          179.9999999,
+          -89.9999999
+        ],
+        [
+          179.9999999,
+          89.9999999
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SWI10_200701011200_GLOBE_ASCAT_V3.1.1_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "10-daily Soil Water Index 0.1degree: GLOBE 2007-01-01T12:00:00Z",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d501104d155e6544cd51a5b89a3e38e9e50023",
+      "file:size": 8488646,
+      "file:local_path": "c_gls_SWI10_200701011200_GLOBE_ASCAT_V3.1.1_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_10daily_v3/2007/01/01/c_gls_SWI10_200701011200_GLOBE_ASCAT_V3.1.1_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(23f992f3-f12e-4eda-9634-4d56950aeb14)/Nodes(c_gls_SWI10_200701011200_GLOBE_ASCAT_V3.1.1_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(soil_water_index)/Nodes(swi_global_12.5km_10daily_v3)/Nodes(2007)/Nodes(01)/Nodes(01)/Nodes(c_gls_SWI10_200701011200_GLOBE_ASCAT_V3.1.1_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms-fcover-globe-vgt-probav",
+  "id": "c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc",
+  "properties": {
+    "created": "2017-04-18T12:04:50.716528Z",
+    "updated": "2025-07-18T03:56:06.573543Z",
+    "published": "2025-03-11T09:41:15.745816Z",
+    "eopf:origin_datetime": "2017-04-18T12:04:50.716528Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "1998-11-11T00:00:00.000000Z",
+    "start_datetime": "1998-11-11T00:00:00.000000Z",
+    "end_datetime": "1999-03-20T23:59:59.000000Z",
+    "instruments": [
+      "vegetation-1"
+    ],
+    "gsd": 1000,
+    "proj:code": "EPSG:4326",
+    "cube:dimensions": {
+      "lon": {
+        "type": "other",
+        "description": "longitude",
+        "extent": [
+          0,
+          40320
+        ]
+      },
+      "lat": {
+        "type": "other",
+        "description": "latitude",
+        "extent": [
+          0,
+          15680
+        ]
+      },
+      "time": {
+        "type": "temporal",
+        "description": "Time",
+        "extent": [
+          0,
+          1
+        ],
+        "values": [
+          "2010-01-01T02:56:41.000000Z"
+        ]
+      }
+    },
+    "cube:variables": {
+      "lon": {
+        "dimensions": [
+          "lon"
+        ],
+        "type": "data",
+        "description": "longitude",
+        "unit": "degrees_east",
+        "data_type": "other"
+      },
+      "lat": {
+        "dimensions": [
+          "lat"
+        ],
+        "type": "data",
+        "description": "latitude",
+        "unit": "degrees_north",
+        "data_type": "other"
+      },
+      "time": {
+        "dimensions": [
+          "time"
+        ],
+        "type": "auxiliary",
+        "values": [
+          10601.0
+        ],
+        "description": "Time",
+        "unit": "days since 1970-01-01 00:00:00",
+        "data_type": "other"
+      },
+      "FCOVER": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Fraction of green Vegetation Cover 1km",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "LENGTH_AFTER": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Length of semi-period after product date",
+        "unit": "days",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "LENGTH_BEFORE": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Length of semi-period before product date",
+        "unit": "days",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "NOBS": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "vegetation_area_fraction number_of_observations",
+        "data_type": "uint8"
+      },
+      "RMSE": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "RMSE on FCover 1km",
+        "nodata": 255,
+        "data_type": "uint8"
+      },
+      "QFLAG": {
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "type": "data",
+        "description": "Quality flag on FCover 1km",
+        "nodata": 65535,
+        "data_type": "uint16"
+      }
+    },
+    "product:type": "vegetation_properties",
+    "processing:level": "L3",
+    "proj:shape": [
+      15680,
+      40320
+    ],
+    "platform": "spot 4",
+    "constellation": "spot",
+    "processing:version": "V2.0.2",
+    "processing:software": {
+      "eometadatatool": "260205082951+dirty"
+    },
+    "expires": "9999-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -60.0,
+    179.9999999,
+    80.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          80.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "title": "10-daily Fraction of green Vegetation Cover 1KM: GLOBE 1999-01-10T00:00:00Z",
+      "roles": [
+        "data"
+      ],
+      "file:checksum": "d50110f7184242310f9a83b81d7c797bc6a137",
+      "file:size": 330746148,
+      "file:local_path": "c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fcover_global_1km_10daily_v2/1999/01/10/c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(19a7e33f-8a0f-4752-b6ed-ea3bdb285adb)/Nodes(c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc)/Nodes(eodata)/Nodes(CLMS)/Nodes(bio-geophysical)/Nodes(vegetation_properties)/Nodes(fcover_global_1km_10daily_v2)/Nodes(1999)/Nodes(01)/Nodes(10)/Nodes(c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      }
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.3.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}
