@@ -1,0 +1,160 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_lie_europe_250m_daily_v2",
+  "id": "c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog",
+  "properties": {
+    "created": "2025-02-24T14:41:11.285605Z",
+    "updated": "2025-05-08T14:08:31.601507Z",
+    "published": "2025-05-08T14:08:31.601507Z",
+    "eopf:origin_datetime": "2025-02-24T14:41:11.285605Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2024-07-01T00:00:01.000000Z",
+    "start_datetime": "2024-07-01T00:00:01.000000Z",
+    "end_datetime": "2024-07-01T23:59:59.000000Z",
+    "instruments": [
+      "visible infrared imaging radiometer suite (viirs)"
+    ],
+    "gsd": 250,
+    "proj:code": "EPSG:4326",
+    "product:type": "river_and_lake_ice_extent",
+    "processing:level": "L3",
+    "platform": "noaa-20",
+    "constellation": "jpss",
+    "product:timeliness": "P2D",
+    "product:timeliness_category": "NRT",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -11.0,
+    50.0,
+    35.0,
+    72.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          35.0,
+          72.0
+        ],
+        [
+          -11.0,
+          72.0
+        ],
+        [
+          -11.0,
+          50.0
+        ],
+        [
+          35.0,
+          50.0
+        ],
+        [
+          35.0,
+          72.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "lie250_lie": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Lake Ice Extent",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Lake Ice Extent"
+        }
+      ],
+      "file:checksum": "d50110e89999ac3b5a98293c346e1e26e186f9",
+      "file:size": 995391,
+      "file:local_path": "c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog/c_gls_LIE250-LIE_202407010000_CEURO_VIIRS_V2.2.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/river_and_lake_ice_extent/lie_europe_250m_daily_v2/2024/07/01/c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog/c_gls_LIE250-LIE_202407010000_CEURO_VIIRS_V2.2.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(0188c765-3e91-4194-aae7-aa7b131407c0)/Nodes(c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog)/Nodes(c_gls_LIE250-LIE_202407010000_CEURO_VIIRS_V2.2.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        14800,
+        24400
+      ],
+      "proj:transform": [
+        0.0025,
+        0.0,
+        -11.00125,
+        0.0,
+        -0.0025,
+        72.00125
+      ],
+      "data_type": "int16",
+      "nodata": 0.0
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

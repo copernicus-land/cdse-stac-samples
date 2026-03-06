@@ -62,8 +62,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          24400
+          -11.0,
+          49.9975
         ]
       },
       "lat": {
@@ -71,8 +71,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          14800
+          35.0025,
+          72.0
         ]
       }
     },
@@ -118,18 +118,14 @@
         "data_type": "int16"
       }
     },
-    "proj:shape": [
-      14800,
-      24400
-    ],
     "platform": "noaa-20",
     "constellation": "jpss",
     "product:timeliness": "P2D",
     "product:timeliness_category": "NRT",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -11.0,
@@ -178,6 +174,12 @@
       "title": "Lake Ice Excent (LIE) 250 m: CEURO 2024-07-01",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "LIE",
+          "description": "Lake Ice Extent"
+        }
       ],
       "file:checksum": "d50110001417e9710af1b53cec84bf6f326b27",
       "file:size": 2282653,

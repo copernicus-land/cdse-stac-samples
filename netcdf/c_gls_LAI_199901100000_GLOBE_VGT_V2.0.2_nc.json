@@ -51,8 +51,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          40320
+          -180.0,
+          179.99107142906257
         ]
       },
       "lat": {
@@ -60,8 +60,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          15680
+          -59.99107142853961,
+          80.0
         ]
       },
       "time": {
@@ -175,17 +175,13 @@
         "data_type": "uint16"
       }
     },
-    "proj:shape": [
-      15680,
-      40320
-    ],
     "platform": "spot 4",
     "constellation": "spot",
     "processing:version": "V2.0.2",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -198,10 +194,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          80.0
-        ],
-        [
           -179.9999999,
           80.0
         ],
@@ -210,11 +202,23 @@
           -60.0
         ],
         [
+          0.0,
+          -60.0
+        ],
+        [
           179.9999999,
           -60.0
         ],
         [
           179.9999999,
+          80.0
+        ],
+        [
+          0.0,
+          80.0
+        ],
+        [
+          -179.9999999,
           80.0
         ]
       ]
@@ -234,6 +238,32 @@
       "title": "10-daily Leaf Area Index 1KM: GLOBE 1999-01-10T00:00:00Z",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "LAI",
+          "description": "Leaf Area Index 1km"
+        },
+        {
+          "name": "LENGTH_AFTER",
+          "description": "Length of semi-period after product date"
+        },
+        {
+          "name": "LENGTH_BEFORE",
+          "description": "Length of semi-period before product date"
+        },
+        {
+          "name": "NOBS",
+          "description": "leaf_area_index number_of_observations"
+        },
+        {
+          "name": "RMSE",
+          "description": "RMSE on LAI 1km"
+        },
+        {
+          "name": "QFLAG",
+          "description": "Quality flag on LAI 1km"
+        }
       ],
       "file:size": 289506812,
       "file:local_path": "c_gls_LAI_199901100000_GLOBE_VGT_V2.0.2_nc/c_gls_LAI_199901100000_GLOBE_VGT_V2.0.2.nc",

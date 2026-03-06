@@ -1,0 +1,417 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_lswt-offline_global_1km_10daily_v1",
+  "id": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog",
+  "properties": {
+    "created": "2025-10-24T10:03:29.000000Z",
+    "updated": "2025-10-24T10:04:46.264641Z",
+    "published": "2025-10-24T10:04:46.264641Z",
+    "eopf:origin_datetime": "2025-10-24T10:03:29.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2010-01-01T00:00:00.000000Z",
+    "start_datetime": "2010-01-01T00:00:00.000000Z",
+    "end_datetime": "2010-01-10T00:00:00.000000Z",
+    "instruments": [
+      "aatsr"
+    ],
+    "gsd": 1000,
+    "proj:code": "EPSG:4326",
+    "product:type": "lake_surface_water_temperature",
+    "processing:level": "L3",
+    "platform": "envisat",
+    "constellation": "envisat",
+    "processing:version": "1.0.3",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -89.9999999,
+    179.9999999,
+    89.9999999
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9999999,
+          89.9999999
+        ],
+        [
+          -179.9999999,
+          -89.9999999
+        ],
+        [
+          0.0,
+          -89.9999999
+        ],
+        [
+          179.9999999,
+          -89.9999999
+        ],
+        [
+          179.9999999,
+          89.9999999
+        ],
+        [
+          0.0,
+          89.9999999
+        ],
+        [
+          -179.9999999,
+          89.9999999
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "lswt_lswt": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Lake Surface Water Temperature",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Lake Surface Water Temperature"
+        }
+      ],
+      "file:checksum": "d50110a34ded5424864bd1c97bcdb527c5ada3",
+      "file:size": 2807960,
+      "file:local_path": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-LSWT_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_surface_water_temperature/lswt-offline_global_1km_10daily_v1/2010/01/01/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-LSWT_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5625884e-54a0-448a-8067-4ea53daef730)/Nodes(c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog)/Nodes(c_gls_LSWT-LSWT_201001010000_GLOBE_AATSR_v1.0.3.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        21600,
+        43200
+      ],
+      "proj:transform": [
+        0.0083333333804295,
+        0.0,
+        -180.00000101727616,
+        0.0,
+        -0.0083333334275277,
+        90.0000010172997
+      ],
+      "data_type": "int16",
+      "nodata": -32768.0,
+      "raster:scale": 0.009999999776483,
+      "raster:offset": 273.1499938964844
+    },
+    "lswt_nobs": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Number of observation",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Number of observation"
+        }
+      ],
+      "file:checksum": "d50110a2602e370b5bb365eb3655d0777f40d3",
+      "file:size": 1819861,
+      "file:local_path": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-NOBS_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_surface_water_temperature/lswt-offline_global_1km_10daily_v1/2010/01/01/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-NOBS_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5625884e-54a0-448a-8067-4ea53daef730)/Nodes(c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog)/Nodes(c_gls_LSWT-NOBS_201001010000_GLOBE_AATSR_v1.0.3.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        21600,
+        43200
+      ],
+      "proj:transform": [
+        0.0083333333804295,
+        0.0,
+        -180.00000101727616,
+        0.0,
+        -0.0083333334275277,
+        90.0000010172997
+      ],
+      "data_type": "int8",
+      "nodata": -128.0
+    },
+    "lswt_qlevel": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Quality Level of Lake Surface Water Temperature",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Quality Level of Lake Surface Water Temperature"
+        }
+      ],
+      "file:checksum": "d50110eb88250b772b426fe19d48ae1d43f9fc",
+      "file:size": 1303873,
+      "file:local_path": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-QLEVEL_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_surface_water_temperature/lswt-offline_global_1km_10daily_v1/2010/01/01/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-QLEVEL_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5625884e-54a0-448a-8067-4ea53daef730)/Nodes(c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog)/Nodes(c_gls_LSWT-QLEVEL_201001010000_GLOBE_AATSR_v1.0.3.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        21600,
+        43200
+      ],
+      "proj:transform": [
+        0.0083333333804295,
+        0.0,
+        -180.00000101727616,
+        0.0,
+        -0.0083333334275277,
+        90.0000010172997
+      ],
+      "data_type": "int8",
+      "nodata": 0.0
+    },
+    "lswt_stdev": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Standar deviation Lake Surface Water Temperature",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Standar deviation Lake Surface Water Temperature"
+        }
+      ],
+      "file:checksum": "d501105ec23cb407408eb68c81af4c3edbfb00",
+      "file:size": 2533915,
+      "file:local_path": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-STDEV_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_surface_water_temperature/lswt-offline_global_1km_10daily_v1/2010/01/01/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-STDEV_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5625884e-54a0-448a-8067-4ea53daef730)/Nodes(c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog)/Nodes(c_gls_LSWT-STDEV_201001010000_GLOBE_AATSR_v1.0.3.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        21600,
+        43200
+      ],
+      "proj:transform": [
+        0.0083333333804295,
+        0.0,
+        -180.00000101727616,
+        0.0,
+        -0.0083333334275277,
+        90.0000010172997
+      ],
+      "data_type": "int16",
+      "nodata": -32768.0,
+      "raster:scale": 0.001000000047497
+    },
+    "lswt_tobs": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Observation day within 10-daily period of Lake Surface Water Temperature",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Observation day within 10-daily period of Lake Surface Water Temperature"
+        }
+      ],
+      "file:checksum": "d50110c4210e916374305817f591e918ff8d63",
+      "file:size": 2315251,
+      "file:local_path": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-TOBS_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_surface_water_temperature/lswt-offline_global_1km_10daily_v1/2010/01/01/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-TOBS_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5625884e-54a0-448a-8067-4ea53daef730)/Nodes(c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog)/Nodes(c_gls_LSWT-TOBS_201001010000_GLOBE_AATSR_v1.0.3.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        21600,
+        43200
+      ],
+      "proj:transform": [
+        0.0083333333804295,
+        0.0,
+        -180.00000101727616,
+        0.0,
+        -0.0083333334275277,
+        90.0000010172997
+      ],
+      "data_type": "int16",
+      "nodata": 0.0
+    },
+    "lswt_unc": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Uncertainty on Lake Surface Water Temperature",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Uncertainty on Lake Surface Water Temperature"
+        }
+      ],
+      "file:checksum": "d50110dfef23d18e9a5d9920a87befb8d8be6f",
+      "file:size": 2830387,
+      "file:local_path": "c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-UNC_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_surface_water_temperature/lswt-offline_global_1km_10daily_v1/2010/01/01/c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog/c_gls_LSWT-UNC_201001010000_GLOBE_AATSR_v1.0.3.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5625884e-54a0-448a-8067-4ea53daef730)/Nodes(c_gls_LSWT_201001010000_GLOBE_AATSR_v1.0.3_cog)/Nodes(c_gls_LSWT-UNC_201001010000_GLOBE_AATSR_v1.0.3.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        21600,
+        43200
+      ],
+      "proj:transform": [
+        0.0083333333804295,
+        0.0,
+        -180.00000101727616,
+        0.0,
+        -0.0083333334275277,
+        90.0000010172997
+      ],
+      "data_type": "int16",
+      "nodata": -32768.0,
+      "raster:scale": 0.001000000047497
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

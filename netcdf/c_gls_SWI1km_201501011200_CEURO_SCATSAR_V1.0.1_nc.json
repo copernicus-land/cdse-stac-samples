@@ -52,8 +52,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          4144
+          35.004464285714285,
+          71.99553571427731
         ]
       },
       "lon": {
@@ -61,8 +61,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          6832
+          -10.995535714285714,
+          49.99553571428398
         ]
       },
       "time": {
@@ -312,17 +312,13 @@
         "data_type": "uint8"
       }
     },
-    "proj:shape": [
-      4144,
-      6832
-    ],
     "product:timeliness": "P2D",
     "product:timeliness_category": "OFFL",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -11.0,
@@ -371,6 +367,76 @@
       "title": "Daily Soil Water Index 1km: CEURO 2015-01-01T12:00:00Z",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "SSF",
+          "description": "Surface State Flag"
+        },
+        {
+          "name": "SWI_002",
+          "description": "Soil Water Index with T=2"
+        },
+        {
+          "name": "QFLAG_002",
+          "description": "Quality Flag with T=2"
+        },
+        {
+          "name": "SWI_005",
+          "description": "Soil Water Index with T=5"
+        },
+        {
+          "name": "QFLAG_005",
+          "description": "Quality Flag with T=5"
+        },
+        {
+          "name": "SWI_010",
+          "description": "Soil Water Index with T=10"
+        },
+        {
+          "name": "QFLAG_010",
+          "description": "Quality Flag with T=10"
+        },
+        {
+          "name": "SWI_015",
+          "description": "Soil Water Index with T=15"
+        },
+        {
+          "name": "QFLAG_015",
+          "description": "Quality Flag with T=15"
+        },
+        {
+          "name": "SWI_020",
+          "description": "Soil Water Index with T=20"
+        },
+        {
+          "name": "QFLAG_020",
+          "description": "Quality Flag with T=20"
+        },
+        {
+          "name": "SWI_040",
+          "description": "Soil Water Index with T=40"
+        },
+        {
+          "name": "QFLAG_040",
+          "description": "Quality Flag with T=40"
+        },
+        {
+          "name": "SWI_060",
+          "description": "Soil Water Index with T=60"
+        },
+        {
+          "name": "QFLAG_060",
+          "description": "Quality Flag with T=60"
+        },
+        {
+          "name": "SWI_100",
+          "description": "Soil Water Index with T=100"
+        },
+        {
+          "name": "QFLAG_100",
+          "description": "Quality Flag with T=100"
+        }
       ],
       "file:size": 61810321,
       "file:local_path": "c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_nc/c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1.nc",

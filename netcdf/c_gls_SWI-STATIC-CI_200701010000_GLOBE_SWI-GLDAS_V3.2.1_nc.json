@@ -51,8 +51,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          1800
+          -89.95,
+          89.94999999998977
         ]
       },
       "lon": {
@@ -60,8 +60,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          3600
+          -179.95,
+          179.94999999997953
         ]
       }
     },
@@ -95,15 +95,11 @@
         "data_type": "other"
       }
     },
-    "proj:shape": [
-      1800,
-      3600
-    ],
     "processing:version": "V3.2.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -116,10 +112,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          89.9999999
-        ],
-        [
           -179.9999999,
           89.9999999
         ],
@@ -128,11 +120,23 @@
           -89.9999999
         ],
         [
+          0.0,
+          -89.9999999
+        ],
+        [
           179.9999999,
           -89.9999999
         ],
         [
           179.9999999,
+          89.9999999
+        ],
+        [
+          0.0,
+          89.9999999
+        ],
+        [
+          -179.9999999,
           89.9999999
         ]
       ]
@@ -152,6 +156,12 @@
       "title": "SWI Static layer: ancillary Correlation Information for 2007",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "Correlation_SWI_GLDAS",
+          "description": "Pearson Correlation between SWI T=1 and GLDAS NOAH version 1 average layer 1 soil moisture (0.00-0.10 m) parameter_id=SoilMoi0_10cm_inst"
+        }
       ],
       "file:checksum": "d5011010591fc848bac1f83475a8dc9be843ca",
       "file:size": 3980152,

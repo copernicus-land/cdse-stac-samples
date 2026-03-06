@@ -49,9 +49,9 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V3.0.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -64,10 +64,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          80.0
-        ],
-        [
           -179.9999999,
           80.0
         ],
@@ -76,11 +72,23 @@
           -60.0
         ],
         [
+          0.0,
+          -60.0
+        ],
+        [
           179.9999999,
           -60.0
         ],
         [
           179.9999999,
+          80.0
+        ],
+        [
+          0.0,
+          80.0
+        ],
+        [
+          -179.9999999,
           80.0
         ]
       ]
@@ -95,11 +103,17 @@
     }
   ],
   "assets": {
-    "normalized_difference_vegetation_index": {
+    "ndvi300_ndvi": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "title": "Normalized Difference Vegetation Index 333m",
+      "title": "Normalized Difference Vegetation Index",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Normalized Difference Vegetation Index"
+        }
       ],
       "file:size": 887122490,
       "file:local_path": "c_gls_NDVI300_201401010000_GLOBE_PROBAV_V3.0.1_cog/c_gls_NDVI300-NDVI_201401010000_GLOBE_PROBAV_V3.0.1.tiff",
@@ -139,11 +153,17 @@
       "raster:scale": 0.004,
       "raster:offset": -0.08
     },
-    "number_of_observations": {
+    "ndvi300_nobs": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "title": "Number of observations on NDVI 333m",
+      "title": "Number of observation",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Number of observation"
+        }
       ],
       "file:size": 236439382,
       "file:local_path": "c_gls_NDVI300_201401010000_GLOBE_PROBAV_V3.0.1_cog/c_gls_NDVI300-NOBS_201401010000_GLOBE_PROBAV_V3.0.1.tiff",
@@ -181,13 +201,18 @@
       "data_type": "uint8",
       "nodata": 255.0
     },
-    "status_flag": {
+    "ndvi300_qflag": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "title": "Quality Flag on NDVI 333m",
+      "title": "Quality Flag on Normalized Difference Vegetation Index",
       "roles": [
         "data"
       ],
-      "file:checksum": "d501109a4fe55b253856ed74a1a67b87057899",
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Quality Flag on Normalized Difference Vegetation Index"
+        }
+      ],
       "file:size": 142446658,
       "file:local_path": "c_gls_NDVI300_201401010000_GLOBE_PROBAV_V3.0.1_cog/c_gls_NDVI300-QFLAG_201401010000_GLOBE_PROBAV_V3.0.1.tiff",
       "href": "s3://eodata/CLMS/bio-geophysical/vegetation_indices/ndvi_global_300m_10daily_v3/2014/01/01/c_gls_NDVI300_201401010000_GLOBE_PROBAV_V3.0.1_cog/c_gls_NDVI300-QFLAG_201401010000_GLOBE_PROBAV_V3.0.1.tiff",
@@ -224,11 +249,17 @@
       "data_type": "uint8",
       "nodata": 255.0
     },
-    "standard_error": {
+    "ndvi300_unc": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "title": "Uncertainty on NDVI 333m",
+      "title": "Uncertainty on Normalized Difference Vegetation Index",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Uncertainty on Normalized Difference Vegetation Index"
+        }
       ],
       "file:size": 799177891,
       "file:local_path": "c_gls_NDVI300_201401010000_GLOBE_PROBAV_V3.0.1_cog/c_gls_NDVI300-UNC_201401010000_GLOBE_PROBAV_V3.0.1.tiff",

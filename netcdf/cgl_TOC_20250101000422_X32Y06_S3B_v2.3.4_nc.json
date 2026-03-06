@@ -52,8 +52,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          3360
+          140.0,
+          149.99702380956927
         ]
       },
       "lat": {
@@ -61,8 +61,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          3360
+          15.002976190478464,
+          25.0
         ]
       }
     },
@@ -613,19 +613,15 @@
         "data_type": "int8"
       }
     },
-    "proj:shape": [
-      3360,
-      3360
-    ],
     "platform": "sentinel-3b",
     "constellation": "sentinel-3",
     "product:timeliness": "P1D",
     "product:timeliness_category": "OFFL",
     "processing:version": "v2.3.4",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -638,10 +634,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          85.0
-        ],
-        [
           -179.9999999,
           85.0
         ],
@@ -650,11 +642,23 @@
           -65.0
         ],
         [
+          0.0,
+          -65.0
+        ],
+        [
           179.9999999,
           -65.0
         ],
         [
           179.9999999,
+          85.0
+        ],
+        [
+          0.0,
+          85.0
+        ],
+        [
+          -179.9999999,
           85.0
         ]
       ]
@@ -674,6 +678,216 @@
       "title": "Sentinel 3B L2 Top Of Canopy Tile X32Y06 at 333m resolution",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "Oa02_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa02"
+        },
+        {
+          "name": "Oa02_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa02"
+        },
+        {
+          "name": "Oa03_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa03"
+        },
+        {
+          "name": "Oa03_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa03"
+        },
+        {
+          "name": "Oa04_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa04"
+        },
+        {
+          "name": "Oa04_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa04"
+        },
+        {
+          "name": "Oa05_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa05"
+        },
+        {
+          "name": "Oa05_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa05"
+        },
+        {
+          "name": "Oa06_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa06"
+        },
+        {
+          "name": "Oa06_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa06"
+        },
+        {
+          "name": "Oa07_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa07"
+        },
+        {
+          "name": "Oa07_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa07"
+        },
+        {
+          "name": "Oa08_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa08"
+        },
+        {
+          "name": "Oa08_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa08"
+        },
+        {
+          "name": "Oa09_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa09"
+        },
+        {
+          "name": "Oa09_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa09"
+        },
+        {
+          "name": "Oa10_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa10"
+        },
+        {
+          "name": "Oa10_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa10"
+        },
+        {
+          "name": "Oa11_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa11"
+        },
+        {
+          "name": "Oa11_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa11"
+        },
+        {
+          "name": "Oa12_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa12"
+        },
+        {
+          "name": "Oa12_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa12"
+        },
+        {
+          "name": "Oa16_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa16"
+        },
+        {
+          "name": "Oa16_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa16"
+        },
+        {
+          "name": "Oa17_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa17"
+        },
+        {
+          "name": "Oa17_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa17"
+        },
+        {
+          "name": "Oa18_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa18"
+        },
+        {
+          "name": "Oa18_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa18"
+        },
+        {
+          "name": "Oa21_toc",
+          "description": "TOC reflectance for OLCI acquisition band Oa21"
+        },
+        {
+          "name": "Oa21_toc_error",
+          "description": "TOC reflectance error for OLCI acquisition band Oa21"
+        },
+        {
+          "name": "S1_an_toc",
+          "description": "TOC reflectance for channel S1 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S1_an_toc_error",
+          "description": "TOC reflectance error for channel S1 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S2_an_toc",
+          "description": "TOC reflectance for channel S2 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S2_an_toc_error",
+          "description": "TOC reflectance error for channel S2 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S3_an_toc",
+          "description": "TOC reflectance for channel S3 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S3_an_toc_error",
+          "description": "TOC reflectance error for channel S3 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S5_an_toc",
+          "description": "TOC reflectance for channel S5 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S5_an_toc_error",
+          "description": "TOC reflectance error for channel S5 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S6_an_toc",
+          "description": "TOC reflectance for channel S6 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "S6_an_toc_error",
+          "description": "TOC reflectance error for channel S6 (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "SAA_olci",
+          "description": "OLCI Solar Azimuth Angle"
+        },
+        {
+          "name": "SZA_olci",
+          "description": "OLCI Solar Zenith Angle"
+        },
+        {
+          "name": "VAA_olci",
+          "description": "OLCI Viewing Azimuth Angle"
+        },
+        {
+          "name": "VZA_olci",
+          "description": "OLCI Viewing Zenith Angle"
+        },
+        {
+          "name": "SAA_slstr",
+          "description": "SLSTR Solar Azimuth Angle"
+        },
+        {
+          "name": "SZA_slstr",
+          "description": "SLSTR Solar Zenith Angle"
+        },
+        {
+          "name": "VAA_slstr",
+          "description": "SLSTR Viewing Azimuth Angle"
+        },
+        {
+          "name": "VZA_slstr",
+          "description": "SLSTR Viewing Zenith Angle"
+        },
+        {
+          "name": "cloud_an",
+          "description": "Cloud mask (A stripe grid, nadir view) (500 m)"
+        },
+        {
+          "name": "quality_flags",
+          "description": "Classification and quality flags"
+        },
+        {
+          "name": "pixel_classif_flags",
+          "description": "OLCI Idepix Cloud mask"
+        },
+        {
+          "name": "AC_process_flag",
+          "description": "Cloud mask (A stripe grid, nadir view) (500 m)"
+        }
       ],
       "file:size": 163626467,
       "file:local_path": "cgl_TOC_20250101000422_X32Y06_S3B_v2.3.4_nc/cgl_TOC_20250101000422_X32Y06_S3B_v2.3.4.nc",

@@ -54,8 +54,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          3584
+          -79.95536095649004,
+          80.0
         ]
       },
       "lon": {
@@ -63,8 +63,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          8064
+          -180.0,
+          179.95536572486162
         ]
       },
       "time": {
@@ -170,17 +170,13 @@
         "data_type": "other"
       }
     },
-    "proj:shape": [
-      3584,
-      8064
-    ],
     "product:timeliness": "PT4H",
     "product:timeliness_category": "NRT",
     "processing:version": "V1.3.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -193,10 +189,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          80.0
-        ],
-        [
           -179.9999999,
           80.0
         ],
@@ -205,11 +197,23 @@
           -80.0
         ],
         [
+          0.0,
+          -80.0
+        ],
+        [
           179.9999999,
           -80.0
         ],
         [
           179.9999999,
+          80.0
+        ],
+        [
+          0.0,
+          80.0
+        ],
+        [
+          -179.9999999,
           80.0
         ]
       ]
@@ -229,6 +233,28 @@
       "title": "Hourly Land Surface Temperature: GLOBE 2010-06-20T01:00:00Z",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "ERRORBAR_LST",
+          "description": "LST Error Bar"
+        },
+        {
+          "name": "LST",
+          "description": "Land Surface Temperature"
+        },
+        {
+          "name": "PERCENT_PROC_PIXELS",
+          "description": "LST Percentage of Processed Pixels"
+        },
+        {
+          "name": "Q_FLAGS",
+          "description": "LST Quality Flags"
+        },
+        {
+          "name": "TIME_DELTA",
+          "description": "LST Time Deltas"
+        }
       ],
       "file:checksum": "d5011002e3a1ef96b3bbf371c4b1b961cb9dd7",
       "file:size": 6724706,

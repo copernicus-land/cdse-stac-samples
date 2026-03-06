@@ -1,0 +1,411 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_fapar_global_1km_10daily_v2",
+  "id": "c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog",
+  "properties": {
+    "created": "2024-06-21T10:30:50.123751Z",
+    "updated": "2025-07-17T00:41:14.761793Z",
+    "published": "2025-03-10T11:23:30.277646Z",
+    "eopf:origin_datetime": "2024-06-21T10:30:50.123751Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2019-11-11T00:00:00.000000Z",
+    "start_datetime": "2019-11-11T00:00:00.000000Z",
+    "end_datetime": "2020-01-10T23:59:59.000000Z",
+    "instruments": [
+      "vegetation"
+    ],
+    "gsd": 1000,
+    "proj:code": "EPSG:4326",
+    "product:type": "vegetation_properties",
+    "processing:level": "L3",
+    "platform": "proba-v",
+    "constellation": "proba-1",
+    "processing:version": "V2.0.1",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -60.0,
+    179.9999999,
+    80.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          -60.0
+        ],
+        [
+          0.0,
+          -60.0
+        ],
+        [
+          179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          80.0
+        ],
+        [
+          0.0,
+          80.0
+        ],
+        [
+          -179.9999999,
+          80.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "fapar_fapar": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Fraction of Absorbed Photosynthetically Active Radiation",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Fraction of Absorbed Photosynthetically Active Radiation"
+        }
+      ],
+      "file:size": 125506940,
+      "file:local_path": "c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fapar_global_1km_10daily_v2/2020/01/10/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        15680,
+        40320
+      ],
+      "proj:transform": [
+        0.0089285714285836,
+        0.0,
+        -180.00446428571428,
+        0.0,
+        -0.0089285714285694,
+        80.00446428571429
+      ],
+      "data_type": "uint8",
+      "nodata": 255.0,
+      "raster:scale": 0.00400000018999
+    },
+    "fapar_lafter": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Length of semi-period after product date on Fraction of Absorbed Photosynthetically Active Radiation",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Length of semi-period after product date on Fraction of Absorbed Photosynthetically Active Radiation"
+        }
+      ],
+      "file:checksum": "d50110cbb44ee71878e81a957e8315690293f9",
+      "file:size": 4306925,
+      "file:local_path": "c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-LAFTER-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fapar_global_1km_10daily_v2/2020/01/10/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-LAFTER-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-LAFTER-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        15680,
+        40320
+      ],
+      "proj:transform": [
+        0.0089285714285836,
+        0.0,
+        -180.00446428571428,
+        0.0,
+        -0.0089285714285694,
+        80.00446428571429
+      ],
+      "data_type": "uint8",
+      "nodata": 255.0
+    },
+    "fapar_lbefore": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Length of semi-period before product date on Fraction of Absorbed Photosynthetically Active Radiation",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Length of semi-period before product date on Fraction of Absorbed Photosynthetically Active Radiation"
+        }
+      ],
+      "file:size": 53041946,
+      "file:local_path": "c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-LBEFORE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fapar_global_1km_10daily_v2/2020/01/10/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-LBEFORE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-LBEFORE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        15680,
+        40320
+      ],
+      "proj:transform": [
+        0.0089285714285836,
+        0.0,
+        -180.00446428571428,
+        0.0,
+        -0.0089285714285694,
+        80.00446428571429
+      ],
+      "data_type": "uint8",
+      "nodata": 255.0
+    },
+    "fapar_nobs": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Number of observation",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Number of observation"
+        }
+      ],
+      "file:size": 57146266,
+      "file:local_path": "c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-NOBS-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fapar_global_1km_10daily_v2/2020/01/10/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-NOBS-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-NOBS-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        15680,
+        40320
+      ],
+      "proj:transform": [
+        0.0089285714285836,
+        0.0,
+        -180.00446428571428,
+        0.0,
+        -0.0089285714285694,
+        80.00446428571429
+      ],
+      "data_type": "uint8",
+      "nodata": 0.0
+    },
+    "fapar_qflag": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Quality Flag on Fraction of Absorbed Photosynthetically Active Radiation",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Quality Flag on Fraction of Absorbed Photosynthetically Active Radiation"
+        }
+      ],
+      "file:checksum": "d50110b80d3eb330bdc3354fde5249583b3ee4",
+      "file:size": 22413407,
+      "file:local_path": "c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-QFLAG-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fapar_global_1km_10daily_v2/2020/01/10/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-QFLAG-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-QFLAG-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        15680,
+        40320
+      ],
+      "proj:transform": [
+        0.0089285714285836,
+        0.0,
+        -180.00446428571428,
+        0.0,
+        -0.0089285714285694,
+        80.00446428571429
+      ],
+      "data_type": "uint16",
+      "nodata": 65535.0
+    },
+    "fapar_rmse": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Root Mean Square Error on Fraction of Absorbed Photosynthetically Active Radiation",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Root Mean Square Error on Fraction of Absorbed Photosynthetically Active Radiation"
+        }
+      ],
+      "file:size": 67152881,
+      "file:local_path": "c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-RMSE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fapar_global_1km_10daily_v2/2020/01/10/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/c_gls_FAPAR-RMSE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-RMSE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        15680,
+        40320
+      ],
+      "proj:transform": [
+        0.0089285714285836,
+        0.0,
+        -180.00446428571428,
+        0.0,
+        -0.0089285714285694,
+        80.00446428571429
+      ],
+      "data_type": "uint8",
+      "nodata": 255.0,
+      "raster:scale": 0.00400000018999
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

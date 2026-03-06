@@ -1,0 +1,316 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_ba_global_300m_daily_v4",
+  "id": "c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog",
+  "properties": {
+    "created": "2025-10-10T08:12:10.000000Z",
+    "updated": "2025-10-10T08:13:49.553169Z",
+    "published": "2025-10-10T08:13:49.553169Z",
+    "eopf:origin_datetime": "2025-10-10T08:12:10.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2024-12-01T00:00:00.000000Z",
+    "start_datetime": "2024-12-01T00:00:00.000000Z",
+    "end_datetime": "2024-12-01T23:59:59.000000Z",
+    "instruments": [
+      "olci",
+      "slstr"
+    ],
+    "gsd": 300,
+    "proj:code": "EPSG:4326",
+    "product:type": "burnt_area",
+    "processing:level": "L3",
+    "constellation": "sentinel-3",
+    "product:timeliness": "PT24H",
+    "product:timeliness_category": "NRT",
+    "processing:version": "V4.0.1",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -60.0,
+    179.9999999,
+    80.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          -60.0
+        ],
+        [
+          0.0,
+          -60.0
+        ],
+        [
+          179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          80.0
+        ],
+        [
+          0.0,
+          80.0
+        ],
+        [
+          -179.9999999,
+          80.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "ba300_bf_nrt": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Fraction of pixel surface affected by fire at the day of the burn detection",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Fraction of pixel surface affected by fire at the day of the burn detection"
+        }
+      ],
+      "file:size": 47561004,
+      "file:local_path": "c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/c_gls_BA300-BF-NRT_202412010000_GLOBE_S3_V4.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/burnt_area/ba_global_300m_daily_v4/2024/12/01/c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/c_gls_BA300-BF-NRT_202412010000_GLOBE_S3_V4.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-BF-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        47040,
+        120960
+      ],
+      "proj:transform": [
+        0.002976190476204,
+        0.0,
+        -180.0014880952381,
+        0.0,
+        -0.0029761904761898,
+        80.00148809523809
+      ],
+      "data_type": "int16",
+      "nodata": -32768.0,
+      "raster:scale": 0.001
+    },
+    "ba300_cp_nrt": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Probability that the burn detection corresponds to an actual burn",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Probability that the burn detection corresponds to an actual burn"
+        }
+      ],
+      "file:size": 47568152,
+      "file:local_path": "c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/c_gls_BA300-CP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/burnt_area/ba_global_300m_daily_v4/2024/12/01/c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/c_gls_BA300-CP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-CP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        47040,
+        120960
+      ],
+      "proj:transform": [
+        0.002976190476204,
+        0.0,
+        -180.0014880952381,
+        0.0,
+        -0.0029761904761898,
+        80.00148809523809
+      ],
+      "data_type": "int16",
+      "nodata": -32768.0,
+      "raster:scale": 0.001
+    },
+    "ba300_dob_nrt": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Day of burn in year (1-366), no burn (0) or flag (<0)",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Day of burn in year (1-366), no burn (0) or flag (<0)"
+        }
+      ],
+      "file:size": 47203878,
+      "file:local_path": "c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/c_gls_BA300-DOB-NRT_202412010000_GLOBE_S3_V4.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/burnt_area/ba_global_300m_daily_v4/2024/12/01/c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/c_gls_BA300-DOB-NRT_202412010000_GLOBE_S3_V4.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-DOB-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        47040,
+        120960
+      ],
+      "proj:transform": [
+        0.002976190476204,
+        0.0,
+        -180.0014880952381,
+        0.0,
+        -0.0029761904761898,
+        80.00148809523809
+      ],
+      "data_type": "int16",
+      "nodata": -32768.0
+    },
+    "ba300_lfp_nrt": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Probability that the fractional burned area is above 0.1",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Probability that the fractional burned area is above 0.1"
+        }
+      ],
+      "file:size": 47562711,
+      "file:local_path": "c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/c_gls_BA300-LFP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/burnt_area/ba_global_300m_daily_v4/2024/12/01/c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/c_gls_BA300-LFP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-LFP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        47040,
+        120960
+      ],
+      "proj:transform": [
+        0.002976190476204,
+        0.0,
+        -180.0014880952381,
+        0.0,
+        -0.0029761904761898,
+        80.00148809523809
+      ],
+      "data_type": "int16",
+      "nodata": -32768.0,
+      "raster:scale": 0.001
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

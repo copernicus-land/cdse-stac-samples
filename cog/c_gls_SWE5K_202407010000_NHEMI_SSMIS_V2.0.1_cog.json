@@ -1,0 +1,217 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_swe_northernhemisphere_5km_daily_v2",
+  "id": "c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog",
+  "properties": {
+    "created": "2025-04-22T20:12:49.709000Z",
+    "updated": "2025-05-08T12:08:19.326945Z",
+    "published": "2025-05-08T12:08:19.326945Z",
+    "eopf:origin_datetime": "2025-04-22T20:12:49.709000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2024-07-01T00:00:00.000000Z",
+    "start_datetime": "2024-07-01T00:00:00.000000Z",
+    "end_datetime": "2024-07-01T23:59:59.000000Z",
+    "instruments": [
+      "ssmis",
+      "viirs"
+    ],
+    "gsd": 5000,
+    "proj:code": "EPSG:4326",
+    "product:type": "snow_water_equivalent",
+    "processing:level": "L3",
+    "product:timeliness": "PT12H",
+    "product:timeliness_category": "NRT",
+    "processing:version": "V2.0.1",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    25.0,
+    179.9999999,
+    84.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9999999,
+          84.0
+        ],
+        [
+          -179.9999999,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          179.9999999,
+          25.0
+        ],
+        [
+          179.9999999,
+          84.0
+        ],
+        [
+          0.0,
+          84.0
+        ],
+        [
+          -179.9999999,
+          84.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "swe5k_swe": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Snow Water Equivalent",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Snow Water Equivalent"
+        }
+      ],
+      "file:checksum": "d50110ec286108692b71858cea19f317563389",
+      "file:size": 1008836,
+      "file:local_path": "c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog/c_gls_SWE5K-SWE_202407010000_NHEMI_SSMIS_V2.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/snow_water_equivalent/swe_northernhemisphere_5km_daily_v2/2024/07/01/c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog/c_gls_SWE5K-SWE_202407010000_NHEMI_SSMIS_V2.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(117a36db-3fd7-4da6-a4ee-9ec599ceb994)/Nodes(c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog)/Nodes(c_gls_SWE5K-SWE_202407010000_NHEMI_SSMIS_V2.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        1000,
+        7200
+      ],
+      "proj:transform": [
+        0.05,
+        0.0,
+        -180.0,
+        0.0,
+        -0.05,
+        85.0
+      ],
+      "data_type": "float32",
+      "nodata": -100000.0
+    },
+    "swe5k_var": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Variance of Snow Water Equivalent",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Variance of Snow Water Equivalent"
+        }
+      ],
+      "file:checksum": "d501103fd9393c167c1550f3905d0ededc6ccb",
+      "file:size": 352226,
+      "file:local_path": "c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog/c_gls_SWE5K-VAR_202407010000_NHEMI_SSMIS_V2.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/snow_water_equivalent/swe_northernhemisphere_5km_daily_v2/2024/07/01/c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog/c_gls_SWE5K-VAR_202407010000_NHEMI_SSMIS_V2.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(117a36db-3fd7-4da6-a4ee-9ec599ceb994)/Nodes(c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog)/Nodes(c_gls_SWE5K-VAR_202407010000_NHEMI_SSMIS_V2.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        1000,
+        7200
+      ],
+      "proj:transform": [
+        0.05,
+        0.0,
+        -180.0,
+        0.0,
+        -0.05,
+        85.0
+      ],
+      "data_type": "float32",
+      "nodata": -100000.0
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

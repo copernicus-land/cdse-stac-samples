@@ -62,8 +62,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          16002
+          4.9975000000000005,
+          45.0
         ]
       },
       "lat": {
@@ -71,8 +71,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          10402
+          45.0,
+          71.0025
         ]
       }
     },
@@ -121,19 +121,15 @@
         "data_type": "int16"
       }
     },
-    "proj:shape": [
-      10402,
-      16002
-    ],
     "platform": "terra",
     "constellation": "a-train",
     "product:timeliness": "P2D",
     "product:timeliness_category": "NRT",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     5.0,
@@ -182,6 +178,12 @@
       "title": "Lake Ice Coverage (LIE) 250m: Baltic 2017-03-14",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "LIE",
+          "description": "Lake Ice Extent"
+        }
       ],
       "file:checksum": "d50110ed98499a0d9be53df41a692a1d3d24dd",
       "file:size": 1543837,

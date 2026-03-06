@@ -1,0 +1,161 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_lie_baltic_250m_daily_v1",
+  "id": "c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog",
+  "properties": {
+    "created": "2025-09-23T14:47:01.000000Z",
+    "updated": "2025-09-23T14:48:27.744996Z",
+    "published": "2025-09-23T14:48:27.744996Z",
+    "eopf:origin_datetime": "2025-09-23T14:47:01.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2017-03-14T00:00:00.000000Z",
+    "start_datetime": "2017-03-14T00:00:00.000000Z",
+    "end_datetime": "2017-03-14T23:59:59.000000Z",
+    "instruments": [
+      "moderate resolution imaging spectrometer (modis)"
+    ],
+    "gsd": 250,
+    "proj:code": "EPSG:4326",
+    "product:type": "river_and_lake_ice_extent",
+    "processing:level": "L3",
+    "platform": "terra",
+    "constellation": "a-train",
+    "product:timeliness": "P2D",
+    "product:timeliness_category": "NRT",
+    "processing:version": "V1.0.1",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    5.0,
+    45.0,
+    45.0,
+    71.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          45.0,
+          71.0
+        ],
+        [
+          5.0,
+          71.0
+        ],
+        [
+          5.0,
+          45.0
+        ],
+        [
+          45.0,
+          45.0
+        ],
+        [
+          45.0,
+          71.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "lie250_lie": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Lake Ice Extent",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Lake Ice Extent"
+        }
+      ],
+      "file:checksum": "d50110cf1aba60e2645e56ec3ee26fce3c8508",
+      "file:size": 461861,
+      "file:local_path": "c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog/c_gls_LIE250-LIE_201703140000_Baltic_MODIS_V1.0.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/river_and_lake_ice_extent/lie_baltic_250m_daily_v1/2017/03/14/c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog/c_gls_LIE250-LIE_201703140000_Baltic_MODIS_V1.0.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(3c78fc78-6509-4d03-b605-f0c86ed67faf)/Nodes(c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog)/Nodes(c_gls_LIE250-LIE_201703140000_Baltic_MODIS_V1.0.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        10402,
+        16002
+      ],
+      "proj:transform": [
+        0.0025,
+        0.0,
+        4.99625,
+        0.0,
+        -0.0025,
+        71.00375
+      ],
+      "data_type": "int16",
+      "nodata": 0.0
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

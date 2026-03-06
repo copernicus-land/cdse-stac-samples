@@ -62,8 +62,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          72000
+          -180.0,
+          179.995
         ]
       },
       "lat": {
@@ -71,8 +71,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          11800
+          25.004999999999995,
+          84.0
         ]
       }
     },
@@ -129,18 +129,14 @@
         "data_type": "int16"
       }
     },
-    "proj:shape": [
-      11800,
-      72000
-    ],
     "constellation": "sentinel-3",
     "product:timeliness": "P1D",
     "product:timeliness_category": "NRT",
     "processing:version": "V1.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -153,10 +149,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          84.0
-        ],
-        [
           -179.9999999,
           84.0
         ],
@@ -165,11 +157,23 @@
           25.0
         ],
         [
+          0.0,
+          25.0
+        ],
+        [
           179.9999999,
           25.0
         ],
         [
           179.9999999,
+          84.0
+        ],
+        [
+          0.0,
+          84.0
+        ],
+        [
+          -179.9999999,
           84.0
         ]
       ]
@@ -189,6 +193,16 @@
       "title": "Lake Ice Coverage (LIE-NH) 500m: Northern Hemisphere 20210401",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "LIE",
+          "description": "Pixel classification"
+        },
+        {
+          "name": "P",
+          "description": "GMM predicted posterior probability of the most likely class"
+        }
       ],
       "file:checksum": "d501106daf451c126f23429fb70ada1060bc66",
       "file:size": 7241949,

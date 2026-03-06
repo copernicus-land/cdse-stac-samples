@@ -62,8 +62,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          7400
+          35.002500000000005,
+          71.9975
         ]
       },
       "lon": {
@@ -71,8 +71,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          12200
+          -10.9975,
+          49.9975
         ]
       }
     },
@@ -120,19 +120,15 @@
         "data_type": "int16"
       }
     },
-    "proj:shape": [
-      7400,
-      12200
-    ],
     "platform": "terra",
     "constellation": "a-train",
     "product:timeliness": "P1D",
     "product:timeliness_category": "NRT",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -11.0,
@@ -181,6 +177,12 @@
       "title": "Daily Snow Cover Extent: Continental Europe, 2017-03-01",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "sce500",
+          "description": "Snow Cover Extent"
+        }
       ],
       "file:size": 180741517,
       "file:local_path": "c_gls_SCE500_201703010000_CEURO_MODIS_V1.0.1_nc/c_gls_SCE500_201703010000_CEURO_MODIS_V1.0.1.nc",

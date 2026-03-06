@@ -1,0 +1,375 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_lst-tci_global_5km_10daily_v2",
+  "id": "c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog",
+  "properties": {
+    "created": "2025-07-19T13:19:29.000000Z",
+    "updated": "2025-07-19T13:21:00.718955Z",
+    "published": "2025-07-19T13:21:00.718955Z",
+    "eopf:origin_datetime": "2025-07-19T13:19:29.000000Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2021-01-11T00:00:00.000000Z",
+    "start_datetime": "2021-01-11T00:00:00.000000Z",
+    "end_datetime": "2021-01-20T23:00:00.000000Z",
+    "instruments": [
+      "seviri",
+      "seviri",
+      "ahi",
+      ""
+    ],
+    "gsd": 5000,
+    "proj:code": "EPSG:4326",
+    "product:type": "land_surface_temperature",
+    "processing:level": "L4",
+    "product:timeliness": "P2D",
+    "product:timeliness_category": "OFFL",
+    "processing:version": "V2.2.1",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -80.0,
+    179.9999999,
+    80.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          -80.0
+        ],
+        [
+          0.0,
+          -80.0
+        ],
+        [
+          179.9999999,
+          -80.0
+        ],
+        [
+          179.9999999,
+          80.0
+        ],
+        [
+          0.0,
+          80.0
+        ],
+        [
+          -179.9999999,
+          80.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "lst10_tci_fobs": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Fraction of valid observations",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Fraction of valid observations"
+        }
+      ],
+      "file:checksum": "d50110b15b1a03976929664dd322bee88ad779",
+      "file:size": 2373608,
+      "file:local_path": "c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-FOBS_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst-tci_global_5km_10daily_v2/2021/01/11/c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-FOBS_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(530add81-d46a-456c-b6f0-f9d107d958e1)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST10-TCI-FOBS_202101110000_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        3584,
+        8064
+      ],
+      "proj:transform": [
+        0.0446428582072258,
+        0.0,
+        -180.0223214291036,
+        0.0,
+        -0.0446428582072258,
+        80.02232142910361
+      ],
+      "data_type": "int16",
+      "nodata": -8000.0,
+      "raster:scale": 0.01
+    },
+    "lst10_tci_max": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Maximum on Land Surface Temperature",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Maximum on Land Surface Temperature"
+        }
+      ],
+      "file:checksum": "d50110c1764ed4530a9a958b43345220e9e7ea",
+      "file:size": 8237533,
+      "file:local_path": "c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-MAX_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst-tci_global_5km_10daily_v2/2021/01/11/c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-MAX_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(530add81-d46a-456c-b6f0-f9d107d958e1)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST10-TCI-MAX_202101110000_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        3584,
+        8064
+      ],
+      "proj:transform": [
+        0.0446428582072258,
+        0.0,
+        -180.0223214291036,
+        0.0,
+        -0.0446428582072258,
+        80.02232142910361
+      ],
+      "data_type": "int16",
+      "nodata": -8000.0,
+      "raster:scale": 0.01,
+      "raster:offset": 273.15
+    },
+    "lst10_tci_median": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Median on Land Surface Temperature",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Median on Land Surface Temperature"
+        }
+      ],
+      "file:checksum": "d5011006dcecfa82f7f89403fc8dcfeb7439ef",
+      "file:size": 8029975,
+      "file:local_path": "c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-MEDIAN_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst-tci_global_5km_10daily_v2/2021/01/11/c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-MEDIAN_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(530add81-d46a-456c-b6f0-f9d107d958e1)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST10-TCI-MEDIAN_202101110000_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        3584,
+        8064
+      ],
+      "proj:transform": [
+        0.0446428582072258,
+        0.0,
+        -180.0223214291036,
+        0.0,
+        -0.0446428582072258,
+        80.02232142910361
+      ],
+      "data_type": "int16",
+      "nodata": -8000.0,
+      "raster:scale": 0.01,
+      "raster:offset": 273.15
+    },
+    "lst10_tci_min": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Minimum on Land Surface Temperature",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Minimum on Land Surface Temperature"
+        }
+      ],
+      "file:checksum": "d50110b7475f8fbbdec4554684ced3b481522f",
+      "file:size": 8115244,
+      "file:local_path": "c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-MIN_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst-tci_global_5km_10daily_v2/2021/01/11/c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-MIN_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(530add81-d46a-456c-b6f0-f9d107d958e1)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST10-TCI-MIN_202101110000_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        3584,
+        8064
+      ],
+      "proj:transform": [
+        0.0446428582072258,
+        0.0,
+        -180.0223214291036,
+        0.0,
+        -0.0446428582072258,
+        80.02232142910361
+      ],
+      "data_type": "int16",
+      "nodata": -8000.0,
+      "raster:scale": 0.01,
+      "raster:offset": 273.15
+    },
+    "lst10_tci_tci": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Thermal Conditions Index",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Thermal Conditions Index"
+        }
+      ],
+      "file:checksum": "d5011040fd43614ee15cb1d4d398a37c7addd2",
+      "file:size": 6276112,
+      "file:local_path": "c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-TCI_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst-tci_global_5km_10daily_v2/2021/01/11/c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog/c_gls_LST10-TCI-TCI_202101110000_GLOBE_GEO_V2.2.1.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(530add81-d46a-456c-b6f0-f9d107d958e1)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST10-TCI-TCI_202101110000_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        3584,
+        8064
+      ],
+      "proj:transform": [
+        0.0446428582072258,
+        0.0,
+        -180.0223214291036,
+        0.0,
+        -0.0446428582072258,
+        80.02232142910361
+      ],
+      "data_type": "int16",
+      "nodata": -8000.0,
+      "raster:scale": 0.0001
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

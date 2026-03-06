@@ -52,8 +52,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          47040
+          -59.997023809491964,
+          80.0
         ]
       },
       "lon": {
@@ -61,8 +61,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          120960
+          -180.0,
+          179.9970238111609
         ]
       },
       "time": {
@@ -119,18 +119,14 @@
         "data_type": "other"
       }
     },
-    "proj:shape": [
-      47040,
-      120960
-    ],
     "constellation": "sentinel-3",
     "product:timeliness": "P2M",
     "product:timeliness_category": "OFFL",
     "processing:version": "V3.1.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -143,10 +139,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          80.0
-        ],
-        [
           -179.9999999,
           80.0
         ],
@@ -155,11 +147,23 @@
           -60.0
         ],
         [
+          0.0,
+          -60.0
+        ],
+        [
           179.9999999,
           -60.0
         ],
         [
           179.9999999,
+          80.0
+        ],
+        [
+          0.0,
+          80.0
+        ],
+        [
+          -179.9999999,
           80.0
         ]
       ]

@@ -63,8 +63,8 @@
         "axis": "y",
         "description": "WGS84 latitude coordinates, center of pixel",
         "extent": [
-          0,
-          1000
+          35.025,
+          84.975
         ]
       },
       "lon": {
@@ -72,8 +72,8 @@
         "axis": "x",
         "description": "WGS84 longitude coordinates, center of pixel",
         "extent": [
-          0,
-          7200
+          -179.975,
+          179.97500000000002
         ]
       }
     },
@@ -133,17 +133,13 @@
         "data_type": "other"
       }
     },
-    "proj:shape": [
-      1000,
-      7200
-    ],
     "product:timeliness": "PT12H",
     "product:timeliness_category": "NRT",
     "processing:version": "V2.0.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -156,10 +152,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          84.0
-        ],
-        [
           -179.9999999,
           84.0
         ],
@@ -168,11 +160,23 @@
           25.0
         ],
         [
+          0.0,
+          25.0
+        ],
+        [
           179.9999999,
           25.0
         ],
         [
           179.9999999,
+          84.0
+        ],
+        [
+          0.0,
+          84.0
+        ],
+        [
+          -179.9999999,
           84.0
         ]
       ]
@@ -192,6 +196,16 @@
       "title": "Daily Snow Water Equivalent: NHEMI 2024-07-01",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "swe",
+          "description": "Snow Water Equivalent"
+        },
+        {
+          "name": "swe_var",
+          "description": "variance of estimate"
+        }
       ],
       "file:size": 57815737,
       "file:local_path": "c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_nc/c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1.nc",

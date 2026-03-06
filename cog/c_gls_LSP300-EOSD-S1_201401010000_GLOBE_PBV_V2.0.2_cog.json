@@ -1,0 +1,168 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_lsp_global_300m_yearly_v2",
+  "id": "c_gls_LSP300-EOSD-S1_201401010000_GLOBE_PBV_V2.0.2_cog",
+  "properties": {
+    "created": "2025-11-24T08:43:24.987610Z",
+    "updated": "2025-12-05T14:55:40.463996Z",
+    "published": "2025-12-05T14:55:40.463996Z",
+    "eopf:origin_datetime": "2025-11-24T08:43:24.987610Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2013-12-25T00:00:00.000000Z",
+    "start_datetime": "2013-12-25T00:00:00.000000Z",
+    "end_datetime": "2020-02-28T23:59:59.000000Z",
+    "instruments": [
+      "vegetation"
+    ],
+    "gsd": 300,
+    "proj:code": "EPSG:4326",
+    "product:type": "vegetation_phenology_and_productivity_parameters",
+    "processing:level": "L3",
+    "platform": "proba-v",
+    "constellation": "proba-1",
+    "product:timeliness": "P1M",
+    "product:timeliness_category": "OFFL",
+    "processing:version": "V2.0.2",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -60.0,
+    179.9999999,
+    80.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9999999,
+          80.0
+        ],
+        [
+          -179.9999999,
+          -60.0
+        ],
+        [
+          0.0,
+          -60.0
+        ],
+        [
+          179.9999999,
+          -60.0
+        ],
+        [
+          179.9999999,
+          80.0
+        ],
+        [
+          0.0,
+          80.0
+        ],
+        [
+          -179.9999999,
+          80.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LSP300-EOSD-S1_201401010000_GLOBE_PBV_V2.0.2_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "lsp300_eosd_s1": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "End-Of-Season Day season 1",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "End-Of-Season Day season 1"
+        }
+      ],
+      "file:size": 1357201350,
+      "file:local_path": "c_gls_LSP300-EOSD-S1_201401010000_GLOBE_PBV_V2.0.2_cog/c_gls_LSP300-EOSD-S1_201401010000_GLOBE_PBV_V2.0.2.tiff",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_phenology_and_productivity_parameters/lsp_global_300m_yearly_v2/2014/01/01/c_gls_LSP300-EOSD-S1_201401010000_GLOBE_PBV_V2.0.2_cog/c_gls_LSP300-EOSD-S1_201401010000_GLOBE_PBV_V2.0.2.tiff",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(7d5c6479-637e-4262-a158-86510c7f28b7)/Nodes(c_gls_LSP300-EOSD-S1_201401010000_GLOBE_PBV_V2.0.2_cog)/Nodes(c_gls_LSP300-EOSD-S1_201401010000_GLOBE_PBV_V2.0.2.tiff)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        47040,
+        120960
+      ],
+      "proj:transform": [
+        0.0029761905,
+        0.0,
+        -180.0014880952381,
+        0.0,
+        -0.0029761905,
+        80.0014880952381
+      ],
+      "data_type": "int16",
+      "nodata": -9999.0
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

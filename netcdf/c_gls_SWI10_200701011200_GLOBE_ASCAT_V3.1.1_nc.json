@@ -51,8 +51,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          1800
+          -89.95,
+          89.94999999998977
         ]
       },
       "lon": {
@@ -60,8 +60,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          3600
+          -179.95,
+          179.94999999997953
         ]
       },
       "time": {
@@ -396,19 +396,15 @@
         "data_type": "uint8"
       }
     },
-    "proj:shape": [
-      1800,
-      3600
-    ],
     "platform": "metop",
     "constellation": "metop",
     "product:timeliness": "P3D",
     "product:timeliness_category": "OFFL",
     "processing:version": "V3.1.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -421,10 +417,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          89.9999999
-        ],
-        [
           -179.9999999,
           89.9999999
         ],
@@ -433,11 +425,23 @@
           -89.9999999
         ],
         [
+          0.0,
+          -89.9999999
+        ],
+        [
           179.9999999,
           -89.9999999
         ],
         [
           179.9999999,
+          89.9999999
+        ],
+        [
+          0.0,
+          89.9999999
+        ],
+        [
+          -179.9999999,
           89.9999999
         ]
       ]
@@ -457,6 +461,104 @@
       "title": "10-daily Soil Water Index 0.1degree: GLOBE 2007-01-01T12:00:00Z",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "VOBS_015",
+          "description": "Percent Valid Observations with T=15"
+        },
+        {
+          "name": "VOBS_040",
+          "description": "Percent Valid Observations with T=40"
+        },
+        {
+          "name": "VOBS_001",
+          "description": "Percent Valid Observations with T=1"
+        },
+        {
+          "name": "VOBS_005",
+          "description": "Percent Valid Observations with T=5"
+        },
+        {
+          "name": "VOBS_060",
+          "description": "Percent Valid Observations with T=60"
+        },
+        {
+          "name": "VOBS_100",
+          "description": "Percent Valid Observations with T=100"
+        },
+        {
+          "name": "VOBS_020",
+          "description": "Percent Valid Observations with T=20"
+        },
+        {
+          "name": "VOBS_010",
+          "description": "Percent Valid Observations with T=10"
+        },
+        {
+          "name": "QFLAG_040",
+          "description": "Quality Flag with T=40"
+        },
+        {
+          "name": "QFLAG_010",
+          "description": "Quality Flag with T=10"
+        },
+        {
+          "name": "QFLAG_015",
+          "description": "Quality Flag with T=15"
+        },
+        {
+          "name": "QFLAG_100",
+          "description": "Quality Flag with T=100"
+        },
+        {
+          "name": "QFLAG_020",
+          "description": "Quality Flag with T=20"
+        },
+        {
+          "name": "QFLAG_005",
+          "description": "Quality Flag with T=5"
+        },
+        {
+          "name": "QFLAG_001",
+          "description": "Quality Flag with T=1"
+        },
+        {
+          "name": "QFLAG_060",
+          "description": "Quality Flag with T=60"
+        },
+        {
+          "name": "SWI_005",
+          "description": "Soil Water Index with T=5"
+        },
+        {
+          "name": "SWI_010",
+          "description": "Soil Water Index with T=10"
+        },
+        {
+          "name": "SWI_001",
+          "description": "Soil Water Index with T=1"
+        },
+        {
+          "name": "SWI_015",
+          "description": "Soil Water Index with T=15"
+        },
+        {
+          "name": "SWI_100",
+          "description": "Soil Water Index with T=100"
+        },
+        {
+          "name": "SWI_040",
+          "description": "Soil Water Index with T=40"
+        },
+        {
+          "name": "SWI_060",
+          "description": "Soil Water Index with T=60"
+        },
+        {
+          "name": "SWI_020",
+          "description": "Soil Water Index with T=20"
+        }
       ],
       "file:checksum": "d50110182a2f7f35126a52ca43562d4da05985",
       "file:size": 8488346,

@@ -62,8 +62,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          5900
+          25.005,
+          83.995
         ]
       },
       "lon": {
@@ -71,8 +71,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          36000
+          -179.995,
+          179.995
         ]
       }
     },
@@ -120,19 +120,15 @@
         "data_type": "int16"
       }
     },
-    "proj:shape": [
-      5900,
-      36000
-    ],
     "platform": "suomi npp",
     "constellation": "jpss",
     "product:timeliness": "P1D",
     "product:timeliness_category": "NRT",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -145,10 +141,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          84.0
-        ],
-        [
           -179.9999999,
           84.0
         ],
@@ -157,11 +149,23 @@
           25.0
         ],
         [
+          0.0,
+          25.0
+        ],
+        [
           179.9999999,
           25.0
         ],
         [
           179.9999999,
+          84.0
+        ],
+        [
+          0.0,
+          84.0
+        ],
+        [
+          -179.9999999,
           84.0
         ]
       ]
@@ -181,6 +185,12 @@
       "title": "Fractional Snow Cover, northern hemisphere, S-NPP VIIRS (0.01deg., 2018-01-09)",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "sce",
+          "description": "Snow Cover Extent"
+        }
       ],
       "file:size": 425160033,
       "file:local_path": "c_gls_SCE_201801090000_NHEMI_VIIRS_V1.0.1_nc/c_gls_SCE_201801090000_NHEMI_VIIRS_V1.0.1.nc",

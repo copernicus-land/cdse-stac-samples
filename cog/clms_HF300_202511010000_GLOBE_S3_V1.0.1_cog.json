@@ -1,0 +1,263 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "collection": "clms_hf_global_300m_daily_v1",
+  "id": "clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog",
+  "properties": {
+    "created": "2025-11-25T10:11:03.620519Z",
+    "updated": "2025-12-05T10:53:19.880033Z",
+    "published": "2025-12-01T09:55:35.649489Z",
+    "eopf:origin_datetime": "2025-11-25T10:11:03.620519Z",
+    "auth:schemes": {
+      "s3": {
+        "type": "s3"
+      },
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+      }
+    },
+    "storage:schemes": {
+      "cdse-s3": {
+        "title": "Copernicus Data Space Ecosystem S3",
+        "description": "This endpoint provides access to EO data which is stored on the object storage of both CloudFerro Cloud and OpenTelekom Cloud (OTC). See the [documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) for more information, including how to get credentials.",
+        "platform": "https://eodata.dataspace.copernicus.eu",
+        "requester_pays": false,
+        "type": "custom-s3",
+        "class": "hot"
+      },
+      "creodias-s3": {
+        "title": "CREODIAS S3",
+        "description": "Comprehensive Earth Observation Data (EODATA) archive offered by CREODIAS as a commercial part of CDSE, designed to provide users with access to a vast repository of satellite data without predefined quota limits.",
+        "platform": "https://eodata.cloudferro.com",
+        "requester_pays": true,
+        "type": "custom-s3",
+        "class": "hot"
+      }
+    },
+    "datetime": "2025-11-01T00:00:00.000000Z",
+    "start_datetime": "2025-11-01T00:00:00.000000Z",
+    "end_datetime": "2025-11-01T23:59:59.000000Z",
+    "instruments": [
+      "olci",
+      "slstr"
+    ],
+    "gsd": 300,
+    "proj:code": "EPSG:4326",
+    "product:type": "evapotranspiration",
+    "processing:level": "L4",
+    "product:timeliness": "P1D",
+    "product:timeliness_category": "OFFL",
+    "processing:version": "V1.0.1",
+    "processing:software": {
+      "eometadatatool": "260305102743"
+    },
+    "expires": "2262-01-01T00:00:00.000000Z"
+  },
+  "bbox": [
+    -179.9999999,
+    -65.0,
+    179.9999999,
+    85.0
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9999999,
+          85.0
+        ],
+        [
+          -179.9999999,
+          -65.0
+        ],
+        [
+          0.0,
+          -65.0
+        ],
+        [
+          179.9999999,
+          -65.0
+        ],
+        [
+          179.9999999,
+          85.0
+        ],
+        [
+          0.0,
+          85.0
+        ],
+        [
+          -179.9999999,
+          85.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "version-history",
+      "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog",
+      "type": "application/json",
+      "title": "Product history record from the CDSE traceability service"
+    }
+  ],
+  "assets": {
+    "h_tsebpt": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Sensible Heat Flux modelled by TSEB-PT (instantaneous)",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Sensible Heat Flux modelled by TSEB-PT (instantaneous)"
+        }
+      ],
+      "file:size": 432182080,
+      "file:local_path": "clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog/clms_HF300_H-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif",
+      "href": "s3://eodata/CLMS/bio-geophysical/evapotranspiration/hf_global_300m_daily_v1/2025/11/01/clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog/clms_HF300_H-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(2148586e-75ea-4d14-b286-a2dd314bf402)/Nodes(clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_HF300_H-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        47040,
+        120960
+      ],
+      "proj:transform": [
+        0.0029761904761925,
+        0.0,
+        -180.0014880952381,
+        0.0,
+        -0.0029761904761899,
+        80.0014880952381
+      ],
+      "data_type": "int16",
+      "nodata": 32767.0
+    },
+    "le_tsebpt": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Latent Heat Flux modelled by TSEB-PT (instantaneous)",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Latent Heat Flux modelled by TSEB-PT (instantaneous)"
+        }
+      ],
+      "file:size": 417426898,
+      "file:local_path": "clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog/clms_HF300_LE-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif",
+      "href": "s3://eodata/CLMS/bio-geophysical/evapotranspiration/hf_global_300m_daily_v1/2025/11/01/clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog/clms_HF300_LE-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(2148586e-75ea-4d14-b286-a2dd314bf402)/Nodes(clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_HF300_LE-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        47040,
+        120960
+      ],
+      "proj:transform": [
+        0.0029761904761925,
+        0.0,
+        -180.0014880952381,
+        0.0,
+        -0.0029761904761899,
+        80.0014880952381
+      ],
+      "data_type": "int16",
+      "nodata": 32767.0
+    },
+    "ot": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Overpass Time (UTC)",
+      "roles": [
+        "data"
+      ],
+      "bands": [
+        {
+          "name": "Band 1",
+          "description": "Overpass Time (UTC)"
+        }
+      ],
+      "file:size": 44485168,
+      "file:local_path": "clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog/clms_HF300_OT_202511010000_GLOBE_S3_V1.0.1.tif",
+      "href": "s3://eodata/CLMS/bio-geophysical/evapotranspiration/hf_global_300m_daily_v1/2025/11/01/clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog/clms_HF300_OT_202511010000_GLOBE_S3_V1.0.1.tif",
+      "alternate:name": "S3",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ],
+      "alternate": {
+        "https": {
+          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(2148586e-75ea-4d14-b286-a2dd314bf402)/Nodes(clms_HF300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_HF300_OT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "alternate:name": "HTTPS",
+          "auth:refs": [
+            "oidc"
+          ],
+          "storage:refs": []
+        }
+      },
+      "proj:shape": [
+        47040,
+        120960
+      ],
+      "proj:transform": [
+        0.0029761904761931,
+        0.0,
+        -180.0014880952381,
+        0.0,
+        -0.0029761904761899,
+        80.0014880952381
+      ],
+      "data_type": "uint32",
+      "nodata": 0.0
+    }
+  },
+  "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+  ]
+}

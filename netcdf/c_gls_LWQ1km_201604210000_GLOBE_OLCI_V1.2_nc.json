@@ -43,8 +43,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          21600
+          -89.99583333333334,
+          89.99583333333334
         ]
       },
       "lon": {
@@ -52,8 +52,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          43200
+          -179.99583333333334,
+          179.99583333333334
         ]
       },
       "time": {
@@ -398,17 +398,13 @@
         "data_type": "other"
       }
     },
-    "proj:shape": [
-      21600,
-      43200
-    ],
     "platform": "sentinel-3a",
     "constellation": "sentinel-3",
     "processing:version": "1.2",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -421,10 +417,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          89.9999999
-        ],
-        [
           -179.9999999,
           89.9999999
         ],
@@ -433,11 +425,23 @@
           -89.9999999
         ],
         [
+          0.0,
+          -89.9999999
+        ],
+        [
           179.9999999,
           -89.9999999
         ],
         [
           179.9999999,
+          89.9999999
+        ],
+        [
+          0.0,
+          89.9999999
+        ],
+        [
+          -179.9999999,
           89.9999999
         ]
       ]
@@ -450,6 +454,116 @@
       "title": "Water Quality, Calimnos L3 Aggregated product",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "num_obs",
+          "description": "number of observations of the pixel area"
+        },
+        {
+          "name": "first_obs",
+          "description": "age in days after the start of the observation period of the first observation included in the pixel area"
+        },
+        {
+          "name": "last_obs",
+          "description": "age in days after the start of the observation period of the last observation included in the pixel area"
+        },
+        {
+          "name": "turbidity_mean",
+          "description": "pixel-mean turbidity derived with Calimnos optical water type dependant blending of total suspended matter algorithms as tuned in the GloboLakes project"
+        },
+        {
+          "name": "Rw1020_rep",
+          "description": "reflectance at 1020 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw400_rep",
+          "description": "reflectance at 400 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw412_rep",
+          "description": "reflectance at 412 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw443_rep",
+          "description": "reflectance at 443 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw490_rep",
+          "description": "reflectance at 490 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw510_rep",
+          "description": "reflectance at 510 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw560_rep",
+          "description": "reflectance at 560 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw620_rep",
+          "description": "reflectance at 620 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw665_rep",
+          "description": "reflectance at 665 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw674_rep",
+          "description": "reflectance at 674 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw681_rep",
+          "description": "reflectance at 681 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw709_rep",
+          "description": "reflectance at 709 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw754_rep",
+          "description": "reflectance at 754 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw760_rep",
+          "description": "reflectance at 764 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw764_rep",
+          "description": "reflectance at 767 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw767_rep",
+          "description": "reflectance at 760 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw779_rep",
+          "description": "reflectance at 779 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw865_rep",
+          "description": "reflectance at 865 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw885_rep",
+          "description": "reflectance at 885 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw900_rep",
+          "description": "reflectance at 900 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "Rw940_rep",
+          "description": "reflectance at 940 nm in the most representative spectrum of fully normalized water-leaving obtained from polymer atmospheric correction processor"
+        },
+        {
+          "name": "RwDayNum_rep",
+          "description": "age in days after the start of the observation period of the most representative water-leaving reflectance spectrum"
+        },
+        {
+          "name": "trophic_state_mean",
+          "description": "pixel-mean trophic state index derived with Calimnos optical water type dependant blending of chlorophyll-a algorithms as tuned in the GloboLakes project."
+        }
       ],
       "file:size": 191681031,
       "href": "s3://eodata/CLMS/bio-geophysical/lake_water_quality/lwq-nrt_global_1km_10daily_v1/2016/04/21/c_gls_LWQ1km_201604210000_GLOBE_OLCI_V1.2_nc/c_gls_LWQ1km_201604210000_GLOBE_OLCI_V1.2.nc",

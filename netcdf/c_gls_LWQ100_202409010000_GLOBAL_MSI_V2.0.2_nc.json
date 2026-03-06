@@ -62,8 +62,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          200376
+          -89.99955084441251,
+          89.99955084441251
         ]
       },
       "lon": {
@@ -71,8 +71,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          400752
+          -179.9995508444125,
+          179.9995508444125
         ]
       }
     },
@@ -362,18 +362,14 @@
         "data_type": "uint16"
       }
     },
-    "proj:shape": [
-      200376,
-      400752
-    ],
     "constellation": "sentinel-2",
     "product:timeliness": "P4D",
     "product:timeliness_category": "NRT",
     "processing:version": "2.0.2",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -386,10 +382,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          89.9999999
-        ],
-        [
           -179.9999999,
           89.9999999
         ],
@@ -398,11 +390,23 @@
           -89.9999999
         ],
         [
+          0.0,
+          -89.9999999
+        ],
+        [
           179.9999999,
           -89.9999999
         ],
         [
           179.9999999,
+          89.9999999
+        ],
+        [
+          0.0,
+          89.9999999
+        ],
+        [
+          -179.9999999,
           89.9999999
         ]
       ]
@@ -422,6 +426,100 @@
       "title": "Water Quality, Calimnos L3 Aggregated product",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "Rw1375_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 1375 nm"
+        },
+        {
+          "name": "Rw1610_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 1610 nm"
+        },
+        {
+          "name": "Rw2190_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 2190 nm"
+        },
+        {
+          "name": "Rw443_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 443 nm"
+        },
+        {
+          "name": "Rw490_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 490 nm"
+        },
+        {
+          "name": "Rw560_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 560 nm"
+        },
+        {
+          "name": "Rw665_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 665 nm"
+        },
+        {
+          "name": "Rw705_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 705 nm"
+        },
+        {
+          "name": "Rw740_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 740 nm"
+        },
+        {
+          "name": "Rw783_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 783 nm"
+        },
+        {
+          "name": "Rw842_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 842 nm"
+        },
+        {
+          "name": "Rw865_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 865 nm"
+        },
+        {
+          "name": "Rw945_rep",
+          "description": "Representative spectrum of fully normalized water-leaving reflectance at 945 nm"
+        },
+        {
+          "name": "RwDayNum_rep",
+          "description": "age in days after the start of the observation period of the most representative water-leaving reflectance spectrum"
+        },
+        {
+          "name": "chla_mean",
+          "description": "Mean concentration of chlorophyll-a"
+        },
+        {
+          "name": "floating_cyanobacteria",
+          "description": "Probability of floating cyanobacteria"
+        },
+        {
+          "name": "tsm_mean",
+          "description": "Mean concentration of total suspended matter"
+        },
+        {
+          "name": "turbidity_mean",
+          "description": "Mean turbidity in Nephelometric Turbidity Units"
+        },
+        {
+          "name": "trophic_state_index",
+          "description": "trophic state index derived with Calimnos blending of chlorophyll-a algorithms tuned in the GloboLakes project"
+        },
+        {
+          "name": "num_obs",
+          "description": "number of observations of the pixel area"
+        },
+        {
+          "name": "first_obs",
+          "description": "age in days after the start of the observation period of the first observation included in the pixel area"
+        },
+        {
+          "name": "last_obs",
+          "description": "age in days after the start of the observation period of the last observation included in the pixel area"
+        },
+        {
+          "name": "quality_flags",
+          "description": "Quality flags"
+        }
       ],
       "file:size": 996504565,
       "file:local_path": "c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_nc/c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2.nc",

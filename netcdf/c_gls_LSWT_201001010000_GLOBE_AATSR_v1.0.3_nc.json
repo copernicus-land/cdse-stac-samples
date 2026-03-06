@@ -51,8 +51,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          21600
+          -89.99583435058594,
+          89.99583435058594
         ]
       },
       "lon": {
@@ -60,8 +60,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          43200
+          -179.99583435058594,
+          179.99583435058594
         ]
       },
       "time": {
@@ -175,17 +175,13 @@
         "data_type": "int16"
       }
     },
-    "proj:shape": [
-      21600,
-      43200
-    ],
     "platform": "envisat",
     "constellation": "envisat",
     "processing:version": "1.0.3",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -179.9999999,
@@ -198,10 +194,6 @@
     "coordinates": [
       [
         [
-          179.9999999,
-          89.9999999
-        ],
-        [
           -179.9999999,
           89.9999999
         ],
@@ -210,11 +202,23 @@
           -89.9999999
         ],
         [
+          0.0,
+          -89.9999999
+        ],
+        [
           179.9999999,
           -89.9999999
         ],
         [
           179.9999999,
+          89.9999999
+        ],
+        [
+          0.0,
+          89.9999999
+        ],
+        [
+          -179.9999999,
           89.9999999
         ]
       ]
@@ -234,6 +238,32 @@
       "title": "CGLOPS AATSR 10 DAYS product",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "lake_surface_water_temperature",
+          "description": "lake surface skin temperature"
+        },
+        {
+          "name": "lswt_uncertainty",
+          "description": "Uncertainty from errors likely to be uncorrelated between LSWTs"
+        },
+        {
+          "name": "lswt_standard_deviation",
+          "description": "This is the standard deviation of the observations within the time period."
+        },
+        {
+          "name": "quality_level",
+          "description": "quality levels"
+        },
+        {
+          "name": "n_lswt",
+          "description": "number of LSWT observations contributing to the avarage."
+        },
+        {
+          "name": "time_obs",
+          "description": "observation time"
+        }
       ],
       "file:checksum": "d50110ca58ec4fea812c112a83f7a857ab9325",
       "file:size": 23497402,

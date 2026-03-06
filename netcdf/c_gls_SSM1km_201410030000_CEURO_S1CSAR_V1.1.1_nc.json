@@ -51,8 +51,8 @@
         "axis": "y",
         "description": "latitude",
         "extent": [
-          0,
-          4144
+          35.004464285714285,
+          71.99553571427731
         ]
       },
       "lon": {
@@ -60,8 +60,8 @@
         "axis": "x",
         "description": "longitude",
         "extent": [
-          0,
-          6832
+          -10.995535714285714,
+          49.99553571428398
         ]
       },
       "time": {
@@ -132,18 +132,14 @@
         "data_type": "uint8"
       }
     },
-    "proj:shape": [
-      4144,
-      6832
-    ],
     "constellation": "sentinel-1",
     "product:timeliness": "P1D",
     "product:timeliness_category": "OFFL",
     "processing:version": "V1.1.1",
     "processing:software": {
-      "eometadatatool": "260205102206+dirty"
+      "eometadatatool": "260305102743"
     },
-    "expires": "9999-01-01T00:00:00.000000Z"
+    "expires": "2262-01-01T00:00:00.000000Z"
   },
   "bbox": [
     -11.0,
@@ -192,6 +188,16 @@
       "title": "Daily Surface Soil Moisture 1km: CEURO 2014-10-03T00:00:00Z",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "ssm",
+          "description": "Surface Soil Moisture"
+        },
+        {
+          "name": "ssm_noise",
+          "description": "Surface Soil Moisture Noise"
+        }
       ],
       "file:checksum": "d501108f8963d5600dbd858211467f6783c954",
       "file:size": 2672430,
