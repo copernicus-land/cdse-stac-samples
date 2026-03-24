@@ -133,7 +133,7 @@
     "product:timeliness_category": "OFFL",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260305102743"
+      "eometadatatool": "260316163011+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -187,7 +187,7 @@
     }
   ],
   "assets": {
-    "netcdf": {
+    "Product": {
       "type": "application/netcdf",
       "title": "Monthly Water Bodies 100M: GLOBE 2020-10-01T00:00:00Z",
       "roles": [

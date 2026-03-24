@@ -336,7 +336,7 @@
     "constellation": "envisat",
     "processing:version": "1.1",
     "processing:software": {
-      "eometadatatool": "260305102743"
+      "eometadatatool": "260316163011+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -383,7 +383,7 @@
   },
   "links": [],
   "assets": {
-    "netcdf": {
+    "Product": {
       "type": "application/netcdf",
       "title": "Water Quality, Calimnos L3 Aggregated product",
       "roles": [

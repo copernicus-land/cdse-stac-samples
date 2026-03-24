@@ -97,7 +97,7 @@
     },
     "processing:version": "V3.2.1",
     "processing:software": {
-      "eometadatatool": "260305102743"
+      "eometadatatool": "260316163011+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -151,7 +151,7 @@
     }
   ],
   "assets": {
-    "netcdf": {
+    "Product": {
       "type": "application/netcdf",
       "title": "SWI Static layer: ancillary Correlation Information for 2007",
       "roles": [
