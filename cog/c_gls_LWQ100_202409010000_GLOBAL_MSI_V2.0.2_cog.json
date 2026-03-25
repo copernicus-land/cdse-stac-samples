@@ -50,7 +50,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "2.0.2",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -61,41 +61,72 @@
     89.9999999
   ],
   "geometry": {
-    "type": "Polygon",
+    "type": "MultiPolygon",
     "coordinates": [
       [
         [
-          -179.9999999,
-          89.9999999
-        ],
+          [
+            -1e-8,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            89.9999999
+          ]
+        ]
+      ],
+      [
         [
-          -179.9999999,
-          -89.9999999
-        ],
-        [
-          0.0,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          89.9999999
-        ],
-        [
-          0.0,
-          89.9999999
-        ],
-        [
-          -179.9999999,
-          89.9999999
+          [
+            179.9999999,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            89.9999999
+          ]
         ]
       ]
     ]
   },
   "links": [
+    {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_water_quality/lwq-nrt_global_100m_10daily_v2/2024/09/01/c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
     {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog",
@@ -112,7 +143,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "chlamean",
           "description": "Mean concentration of chlorophyll-a"
         }
       ],
@@ -129,7 +160,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-CHLAMEAN_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-CHLAMEAN_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -160,7 +191,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "fcbprob",
           "description": "Probability of Floating Cyanobacteria"
         }
       ],
@@ -177,7 +208,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-FCBPROB_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-FCBPROB_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -208,7 +239,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "fobs",
           "description": "First observation day within 10-daily period of Lake Water Quality"
         }
       ],
@@ -225,7 +256,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-FOBS_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-FOBS_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -256,7 +287,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lobs",
           "description": "Last observation day within 10-daily period of Lake Water Quality"
         }
       ],
@@ -273,7 +304,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-LOBS_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-LOBS_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -304,7 +335,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobs",
           "description": "Number of observation"
         }
       ],
@@ -321,7 +352,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-NOBS_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-NOBS_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -352,7 +383,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag",
           "description": "Quality Flag on Lake Water Quality"
         }
       ],
@@ -369,7 +400,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-QFLAG_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-QFLAG_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -400,7 +431,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw1375",
           "description": "Fully normalized water leaving reflectance at 1375 nm"
         }
       ],
@@ -417,7 +448,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW1375_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW1375_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -448,7 +479,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw1610",
           "description": "Fully normalized water leaving reflectance at 1610 nm"
         }
       ],
@@ -465,7 +496,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW1610_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW1610_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -496,7 +527,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw2190",
           "description": "Fully normalized water leaving reflectance at 2190 nm"
         }
       ],
@@ -513,7 +544,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW2190_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW2190_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -544,7 +575,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw443",
           "description": "Fully normalized water leaving reflectance at 443 nm"
         }
       ],
@@ -561,7 +592,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW443_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW443_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -592,7 +623,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw490",
           "description": "Fully normalized water leaving reflectance at 490 nm"
         }
       ],
@@ -609,7 +640,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW490_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW490_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -640,7 +671,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw560",
           "description": "Fully normalized water leaving reflectance at 560 nm"
         }
       ],
@@ -657,7 +688,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW560_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW560_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -688,7 +719,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw665",
           "description": "Fully normalized water leaving reflectance at 665 nm"
         }
       ],
@@ -705,7 +736,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW665_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW665_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -736,7 +767,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw705",
           "description": "Fully normalized water leaving reflectance at 705 nm"
         }
       ],
@@ -753,7 +784,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW705_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW705_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -784,7 +815,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw740",
           "description": "Fully normalized water leaving reflectance at 740 nm"
         }
       ],
@@ -801,7 +832,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW740_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW740_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -832,7 +863,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw783",
           "description": "Fully normalized water leaving reflectance at 783 nm"
         }
       ],
@@ -849,7 +880,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW783_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW783_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -880,7 +911,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw842",
           "description": "Fully normalized water leaving reflectance at 842 nm"
         }
       ],
@@ -897,7 +928,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW842_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW842_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -928,7 +959,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw865",
           "description": "Fully normalized water leaving reflectance at 865 nm"
         }
       ],
@@ -945,7 +976,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW865_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW865_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -976,7 +1007,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw945",
           "description": "Fully normalized water leaving reflectance at 945 nm"
         }
       ],
@@ -993,7 +1024,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW945_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-RW945_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1024,7 +1055,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tmean",
           "description": "Mean of turbidity in water body"
         }
       ],
@@ -1041,7 +1072,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-TMEAN_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-TMEAN_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1072,7 +1103,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tobs",
           "description": "Observation day within 10-daily period of Lake Water Quality"
         }
       ],
@@ -1089,7 +1120,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-TOBS_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-TOBS_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1120,7 +1151,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tsi",
           "description": "Trophic state index"
         }
       ],
@@ -1137,7 +1168,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-TSI_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-TSI_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1168,7 +1199,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tsmmean",
           "description": "Mean concentration of total suspended matter"
         }
       ],
@@ -1185,7 +1216,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-TSMMEAN_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(e75bfc0a-22e2-4eee-a7cf-9a0000872fb5)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_cog)/Nodes(c_gls_LWQ100-TSMMEAN_202409010000_GLOBAL_MSI_V2.0.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

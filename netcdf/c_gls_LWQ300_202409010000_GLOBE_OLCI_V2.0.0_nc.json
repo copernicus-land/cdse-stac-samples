@@ -469,7 +469,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "2.0.0",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -480,41 +480,72 @@
     89.9999999
   ],
   "geometry": {
-    "type": "Polygon",
+    "type": "MultiPolygon",
     "coordinates": [
       [
         [
-          -179.9999999,
-          89.9999999
-        ],
+          [
+            -1e-8,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            89.9999999
+          ]
+        ]
+      ],
+      [
         [
-          -179.9999999,
-          -89.9999999
-        ],
-        [
-          0.0,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          89.9999999
-        ],
-        [
-          0.0,
-          89.9999999
-        ],
-        [
-          -179.9999999,
-          89.9999999
+          [
+            179.9999999,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            89.9999999
+          ]
         ]
       ]
     ]
   },
   "links": [
+    {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_water_quality/lwq-nrt_global_300m_10daily_v2/2024/09/01/c_gls_LWQ300_202409010000_GLOBE_OLCI_V2.0.0_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
     {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LWQ300_202409010000_GLOBE_OLCI_V2.0.0_nc",
@@ -531,79 +562,79 @@
       ],
       "bands": [
         {
-          "name": "RwDayNum_rep",
+          "name": "rwdaynum_rep",
           "description": "Age in days after the start of the observation period of the most representative water-leaving reflectance spectrum"
         },
         {
-          "name": "Rw400_rep",
+          "name": "rw400_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 400 nm"
         },
         {
-          "name": "Rw412_rep",
+          "name": "rw412_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 412 nm"
         },
         {
-          "name": "Rw443_rep",
+          "name": "rw443_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 443 nm"
         },
         {
-          "name": "Rw490_rep",
+          "name": "rw490_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 490 nm"
         },
         {
-          "name": "Rw510_rep",
+          "name": "rw510_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 510 nm"
         },
         {
-          "name": "Rw560_rep",
+          "name": "rw560_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 560 nm"
         },
         {
-          "name": "Rw620_rep",
+          "name": "rw620_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 620 nm"
         },
         {
-          "name": "Rw665_rep",
+          "name": "rw665_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 665 nm"
         },
         {
-          "name": "Rw674_rep",
+          "name": "rw674_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 674 nm"
         },
         {
-          "name": "Rw681_rep",
+          "name": "rw681_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 681 nm"
         },
         {
-          "name": "Rw709_rep",
+          "name": "rw709_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 709 nm"
         },
         {
-          "name": "Rw754_rep",
+          "name": "rw754_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 754 nm"
         },
         {
-          "name": "Rw779_rep",
+          "name": "rw779_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 779 nm"
         },
         {
-          "name": "Rw885_rep",
+          "name": "rw885_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 885 nm"
         },
         {
-          "name": "Rw900_rep",
+          "name": "rw900_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 900 nm"
         },
         {
-          "name": "Rw1020_rep",
+          "name": "rw1020_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 1020 nm"
         },
         {
-          "name": "Rw_relative_uncertainty",
+          "name": "rw_relative_uncertainty",
           "description": "Relative uncertainty in fully normalized water-leaving reflectance at peak reflectance"
         },
         {
-          "name": "Rw_relative_uncertainty_unbiased",
+          "name": "rw_relative_uncertainty_unbiased",
           "description": "Relative unbiased uncertainty in fully normalized water-leaving reflectance at peak reflectance"
         },
         {
@@ -664,7 +695,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b2a562a9-5957-4cbf-ad8b-5b01d38fff46)/Nodes(c_gls_LWQ300_202409010000_GLOBE_OLCI_V2.0.0_nc)/Nodes(c_gls_LWQ300_202409010000_GLOBE_OLCI_V2.0.0.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(b2a562a9-5957-4cbf-ad8b-5b01d38fff46)/Nodes(c_gls_LWQ300_202409010000_GLOBE_OLCI_V2.0.0_nc)/Nodes(c_gls_LWQ300_202409010000_GLOBE_OLCI_V2.0.0.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

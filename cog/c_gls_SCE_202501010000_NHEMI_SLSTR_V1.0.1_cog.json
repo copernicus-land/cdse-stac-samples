@@ -50,7 +50,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -97,6 +97,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/snow_cover_extent/sce_northernhemisphere_1km_daily_v1/2025/01/01/c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_cog",
       "type": "application/json",
@@ -112,7 +125,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "sce",
           "description": "Surface snow area fraction"
         }
       ],
@@ -130,7 +143,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(8d17edb0-69bb-4eac-9a2e-68ed59c4ef87)/Nodes(c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_cog)/Nodes(c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(8d17edb0-69bb-4eac-9a2e-68ed59c4ef87)/Nodes(c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1_cog)/Nodes(c_gls_SCE_202501010000_NHEMI_SLSTR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

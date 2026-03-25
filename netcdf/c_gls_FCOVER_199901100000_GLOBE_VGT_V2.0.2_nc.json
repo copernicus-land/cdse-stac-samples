@@ -179,7 +179,7 @@
     "constellation": "spot",
     "processing:version": "V2.0.2",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -226,6 +226,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fcover_global_1km_10daily_v2/1999/01/10/c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc",
       "type": "application/json",
@@ -241,27 +254,27 @@
       ],
       "bands": [
         {
-          "name": "FCOVER",
+          "name": "fcover",
           "description": "Fraction of green Vegetation Cover 1km"
         },
         {
-          "name": "LENGTH_AFTER",
+          "name": "length_after",
           "description": "Length of semi-period after product date"
         },
         {
-          "name": "LENGTH_BEFORE",
+          "name": "length_before",
           "description": "Length of semi-period before product date"
         },
         {
-          "name": "NOBS",
+          "name": "nobs",
           "description": "vegetation_area_fraction number_of_observations"
         },
         {
-          "name": "RMSE",
+          "name": "rmse",
           "description": "RMSE on FCover 1km"
         },
         {
-          "name": "QFLAG",
+          "name": "qflag",
           "description": "Quality flag on FCover 1km"
         }
       ],
@@ -278,7 +291,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(19a7e33f-8a0f-4752-b6ed-ea3bdb285adb)/Nodes(c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc)/Nodes(c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(19a7e33f-8a0f-4752-b6ed-ea3bdb285adb)/Nodes(c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2_nc)/Nodes(c_gls_FCOVER_199901100000_GLOBE_VGT_V2.0.2.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

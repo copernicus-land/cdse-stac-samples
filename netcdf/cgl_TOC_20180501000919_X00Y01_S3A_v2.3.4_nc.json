@@ -619,7 +619,7 @@
     "product:timeliness_category": "OFFL",
     "processing:version": "v2.3.4",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -666,6 +666,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/top-of-canopy_reflectances/toc_global_300m_daily_v2/2018/05/01/cgl_TOC_20180501000919_X00Y01_S3A_v2.3.4_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/cgl_TOC_20180501000919_X00Y01_S3A_v2.3.4_nc",
       "type": "application/json",
@@ -681,195 +694,195 @@
       ],
       "bands": [
         {
-          "name": "Oa02_toc",
+          "name": "oa02_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa02"
         },
         {
-          "name": "Oa02_toc_error",
+          "name": "oa02_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa02"
         },
         {
-          "name": "Oa03_toc",
+          "name": "oa03_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa03"
         },
         {
-          "name": "Oa03_toc_error",
+          "name": "oa03_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa03"
         },
         {
-          "name": "Oa04_toc",
+          "name": "oa04_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa04"
         },
         {
-          "name": "Oa04_toc_error",
+          "name": "oa04_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa04"
         },
         {
-          "name": "Oa05_toc",
+          "name": "oa05_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa05"
         },
         {
-          "name": "Oa05_toc_error",
+          "name": "oa05_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa05"
         },
         {
-          "name": "Oa06_toc",
+          "name": "oa06_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa06"
         },
         {
-          "name": "Oa06_toc_error",
+          "name": "oa06_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa06"
         },
         {
-          "name": "Oa07_toc",
+          "name": "oa07_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa07"
         },
         {
-          "name": "Oa07_toc_error",
+          "name": "oa07_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa07"
         },
         {
-          "name": "Oa08_toc",
+          "name": "oa08_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa08"
         },
         {
-          "name": "Oa08_toc_error",
+          "name": "oa08_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa08"
         },
         {
-          "name": "Oa09_toc",
+          "name": "oa09_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa09"
         },
         {
-          "name": "Oa09_toc_error",
+          "name": "oa09_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa09"
         },
         {
-          "name": "Oa10_toc",
+          "name": "oa10_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa10"
         },
         {
-          "name": "Oa10_toc_error",
+          "name": "oa10_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa10"
         },
         {
-          "name": "Oa11_toc",
+          "name": "oa11_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa11"
         },
         {
-          "name": "Oa11_toc_error",
+          "name": "oa11_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa11"
         },
         {
-          "name": "Oa12_toc",
+          "name": "oa12_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa12"
         },
         {
-          "name": "Oa12_toc_error",
+          "name": "oa12_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa12"
         },
         {
-          "name": "Oa16_toc",
+          "name": "oa16_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa16"
         },
         {
-          "name": "Oa16_toc_error",
+          "name": "oa16_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa16"
         },
         {
-          "name": "Oa17_toc",
+          "name": "oa17_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa17"
         },
         {
-          "name": "Oa17_toc_error",
+          "name": "oa17_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa17"
         },
         {
-          "name": "Oa18_toc",
+          "name": "oa18_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa18"
         },
         {
-          "name": "Oa18_toc_error",
+          "name": "oa18_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa18"
         },
         {
-          "name": "Oa21_toc",
+          "name": "oa21_toc",
           "description": "TOC reflectance for OLCI acquisition band Oa21"
         },
         {
-          "name": "Oa21_toc_error",
+          "name": "oa21_toc_error",
           "description": "TOC reflectance error for OLCI acquisition band Oa21"
         },
         {
-          "name": "S1_an_toc",
+          "name": "s1_an_toc",
           "description": "TOC reflectance for channel S1 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S1_an_toc_error",
+          "name": "s1_an_toc_error",
           "description": "TOC reflectance error for channel S1 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S2_an_toc",
+          "name": "s2_an_toc",
           "description": "TOC reflectance for channel S2 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S2_an_toc_error",
+          "name": "s2_an_toc_error",
           "description": "TOC reflectance error for channel S2 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S3_an_toc",
+          "name": "s3_an_toc",
           "description": "TOC reflectance for channel S3 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S3_an_toc_error",
+          "name": "s3_an_toc_error",
           "description": "TOC reflectance error for channel S3 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S5_an_toc",
+          "name": "s5_an_toc",
           "description": "TOC reflectance for channel S5 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S5_an_toc_error",
+          "name": "s5_an_toc_error",
           "description": "TOC reflectance error for channel S5 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S6_an_toc",
+          "name": "s6_an_toc",
           "description": "TOC reflectance for channel S6 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "S6_an_toc_error",
+          "name": "s6_an_toc_error",
           "description": "TOC reflectance error for channel S6 (A stripe grid, nadir view) (500 m)"
         },
         {
-          "name": "SAA_olci",
+          "name": "saa_olci",
           "description": "OLCI Solar Azimuth Angle"
         },
         {
-          "name": "SZA_olci",
+          "name": "sza_olci",
           "description": "OLCI Solar Zenith Angle"
         },
         {
-          "name": "VAA_olci",
+          "name": "vaa_olci",
           "description": "OLCI Viewing Azimuth Angle"
         },
         {
-          "name": "VZA_olci",
+          "name": "vza_olci",
           "description": "OLCI Viewing Zenith Angle"
         },
         {
-          "name": "SAA_slstr",
+          "name": "saa_slstr",
           "description": "SLSTR Solar Azimuth Angle"
         },
         {
-          "name": "SZA_slstr",
+          "name": "sza_slstr",
           "description": "SLSTR Solar Zenith Angle"
         },
         {
-          "name": "VAA_slstr",
+          "name": "vaa_slstr",
           "description": "SLSTR Viewing Azimuth Angle"
         },
         {
-          "name": "VZA_slstr",
+          "name": "vza_slstr",
           "description": "SLSTR Viewing Zenith Angle"
         },
         {
@@ -885,7 +898,7 @@
           "description": "OLCI Idepix Cloud mask"
         },
         {
-          "name": "AC_process_flag",
+          "name": "ac_process_flag",
           "description": "Cloud mask (A stripe grid, nadir view) (500 m)"
         }
       ],
@@ -902,7 +915,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(76265b7e-ef6c-4df0-9c27-3851744c966b)/Nodes(cgl_TOC_20180501000919_X00Y01_S3A_v2.3.4_nc)/Nodes(cgl_TOC_20180501000919_X00Y01_S3A_v2.3.4.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(76265b7e-ef6c-4df0-9c27-3851744c966b)/Nodes(cgl_TOC_20180501000919_X00Y01_S3A_v2.3.4_nc)/Nodes(cgl_TOC_20180501000919_X00Y01_S3A_v2.3.4.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

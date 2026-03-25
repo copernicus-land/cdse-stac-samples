@@ -173,7 +173,7 @@
     "product:timeliness_category": "OFFL",
     "processing:version": "V2.2.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -220,6 +220,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst-tci_global_5km_10daily_v2/2021/01/11/c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_nc",
       "type": "application/json",
@@ -235,23 +248,23 @@
       ],
       "bands": [
         {
-          "name": "FRAC_VALID_OBS",
+          "name": "frac_valid_obs",
           "description": "Fraction of Valid Observations"
         },
         {
-          "name": "MAX",
+          "name": "max",
           "description": "LST Maximum"
         },
         {
-          "name": "MEDIAN",
+          "name": "median",
           "description": "LST Median"
         },
         {
-          "name": "MIN",
+          "name": "min",
           "description": "LST Minimum"
         },
         {
-          "name": "TCI",
+          "name": "tci",
           "description": "Thermal Conditions Index"
         }
       ],
@@ -269,7 +282,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(8f3de6ea-7d79-44ab-ab9d-51aaa89d6659)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_nc)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(8f3de6ea-7d79-44ab-ab9d-51aaa89d6659)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1_nc)/Nodes(c_gls_LST10-TCI_202101110000_GLOBE_GEO_V2.2.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

@@ -49,7 +49,7 @@
     "constellation": "envisat",
     "processing:version": "1.3.0",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -60,41 +60,72 @@
     89.9999999
   ],
   "geometry": {
-    "type": "Polygon",
+    "type": "MultiPolygon",
     "coordinates": [
       [
         [
-          -179.9999999,
-          89.9999999
-        ],
+          [
+            -1e-8,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            89.9999999
+          ]
+        ]
+      ],
+      [
         [
-          -179.9999999,
-          -89.9999999
-        ],
-        [
-          0.0,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          89.9999999
-        ],
-        [
-          0.0,
-          89.9999999
-        ],
-        [
-          -179.9999999,
-          89.9999999
+          [
+            179.9999999,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            89.9999999
+          ]
         ]
       ]
     ]
   },
   "links": [
+    {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_water_quality/lwq-reproc_global_300m_10daily_v1/2003/01/01/c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
     {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog",
@@ -111,7 +142,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "fobs",
           "description": "First observation day within 10-daily period of Lake Water Quality"
         }
       ],
@@ -128,7 +159,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-FOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-FOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -159,7 +190,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lobs",
           "description": "Last observation day within 10-daily period of Lake Water Quality"
         }
       ],
@@ -176,7 +207,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-LOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-LOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -207,7 +238,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobsqrs",
           "description": "Number of observation potentially affected by suboptimal observation conditions"
         }
       ],
@@ -224,7 +255,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-NOBSQRS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-NOBSQRS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -255,7 +286,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobs",
           "description": "Number of observation"
         }
       ],
@@ -273,7 +304,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-NOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-NOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -304,7 +335,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw412",
           "description": "Fully normalized water leaving reflectance at 412 nm"
         }
       ],
@@ -321,7 +352,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW412_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW412_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -352,7 +383,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw443",
           "description": "Fully normalized water leaving reflectance at 443 nm"
         }
       ],
@@ -369,7 +400,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW443_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW443_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -400,7 +431,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw490",
           "description": "Fully normalized water leaving reflectance at 490 nm"
         }
       ],
@@ -417,7 +448,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW490_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW490_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -448,7 +479,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw510",
           "description": "Fully normalized water leaving reflectance at 510 nm"
         }
       ],
@@ -465,7 +496,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW510_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW510_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -496,7 +527,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw560",
           "description": "Fully normalized water leaving reflectance at 560 nm"
         }
       ],
@@ -513,7 +544,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW560_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW560_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -544,7 +575,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw620",
           "description": "Fully normalized water leaving reflectance at 620 nm"
         }
       ],
@@ -561,7 +592,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW620_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW620_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -592,7 +623,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw665",
           "description": "Fully normalized water leaving reflectance at 665 nm"
         }
       ],
@@ -609,7 +640,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW665_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW665_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -640,7 +671,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw681",
           "description": "Fully normalized water leaving reflectance at 681 nm"
         }
       ],
@@ -657,7 +688,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW681_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW681_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -688,7 +719,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw709",
           "description": "Fully normalized water leaving reflectance at 709 nm"
         }
       ],
@@ -705,7 +736,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW709_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW709_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -736,7 +767,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw754",
           "description": "Fully normalized water leaving reflectance at 754 nm"
         }
       ],
@@ -753,7 +784,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW754_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW754_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -784,7 +815,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw760",
           "description": "Fully normalized water leaving reflectance at 760 nm"
         }
       ],
@@ -801,7 +832,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW760_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW760_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -832,7 +863,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw779",
           "description": "Fully normalized water leaving reflectance at 779 nm"
         }
       ],
@@ -849,7 +880,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW779_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW779_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -880,7 +911,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw865",
           "description": "Fully normalized water leaving reflectance at 865 nm"
         }
       ],
@@ -897,7 +928,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW865_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW865_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -928,7 +959,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw885",
           "description": "Fully normalized water leaving reflectance at 885 nm"
         }
       ],
@@ -945,7 +976,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW885_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW885_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -976,7 +1007,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rw900",
           "description": "Fully normalized water leaving reflectance at 900 nm"
         }
       ],
@@ -993,7 +1024,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW900_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-RW900_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1024,7 +1055,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tmean",
           "description": "Mean of turbidity in water body"
         }
       ],
@@ -1041,7 +1072,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TMEAN_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TMEAN_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1072,7 +1103,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tnobs",
           "description": "Number of observation for turbidity in water body"
         }
       ],
@@ -1089,7 +1120,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TNOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TNOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1120,7 +1151,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tobs",
           "description": "Observation day within 10-daily period of Lake Water Quality"
         }
       ],
@@ -1137,7 +1168,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1168,7 +1199,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tsinobs",
           "description": "Number of observation for trophic state index"
         }
       ],
@@ -1185,7 +1216,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TSINOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TSINOBS_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1216,7 +1247,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tsi",
           "description": "Trophic state index"
         }
       ],
@@ -1233,7 +1264,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TSI_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TSI_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -1264,7 +1295,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tstdev",
           "description": "Standar deviation of turbidity in water body"
         }
       ],
@@ -1281,7 +1312,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TSTDEV_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(45d21f95-76c3-4ccf-96c4-d72ad34a96c9)/Nodes(c_gls_LWQ300_200301010000_GLOBE_MERIS_V1.3.0_cog)/Nodes(c_gls_LWQ300-TSTDEV_200301010000_GLOBE_MERIS_V1.3.0.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

@@ -124,7 +124,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V3.1.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -171,6 +171,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/burnt_area/ba_global_300m_daily_v3/2023/07/01/c_gls_BA300-NRT_202307010000_GLOBE_S3_V3.1.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_BA300-NRT_202307010000_GLOBE_S3_V3.1.1_nc",
       "type": "application/json",
@@ -183,6 +196,12 @@
       "title": "daily Burnt Area 333M: GLOBE 2023-07-01T00:00:00Z",
       "roles": [
         "data"
+      ],
+      "bands": [
+        {
+          "name": "day_of_burn",
+          "description": "day of burn"
+        }
       ],
       "file:size": 62431821,
       "file:local_path": "c_gls_BA300-NRT_202307010000_GLOBE_S3_V3.1.1_nc/c_gls_BA300-NRT_202307010000_GLOBE_S3_V3.1.1.nc",
@@ -197,7 +216,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(7e742da7-20f9-453a-b4e6-198a18f7fb47)/Nodes(c_gls_BA300-NRT_202307010000_GLOBE_S3_V3.1.1_nc)/Nodes(c_gls_BA300-NRT_202307010000_GLOBE_S3_V3.1.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(7e742da7-20f9-453a-b4e6-198a18f7fb47)/Nodes(c_gls_BA300-NRT_202307010000_GLOBE_S3_V3.1.1_nc)/Nodes(c_gls_BA300-NRT_202307010000_GLOBE_S3_V3.1.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

@@ -157,7 +157,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V2.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -204,6 +204,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_indices/ndvi_global_300m_10daily_v2/2020/07/01/c_gls_NDVI300_202007010000_GLOBE_OLCI_V2.0.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_NDVI300_202007010000_GLOBE_OLCI_V2.0.1_nc",
       "type": "application/json",
@@ -219,19 +232,19 @@
       ],
       "bands": [
         {
-          "name": "NDVI",
+          "name": "ndvi",
           "description": "Normalized Difference Vegetation Index 333m"
         },
         {
-          "name": "NDVI_unc",
+          "name": "ndvi_unc",
           "description": "Uncertainty on NDVI 333m"
         },
         {
-          "name": "NOBS",
+          "name": "nobs",
           "description": "normalized_difference_vegetation_index number_of_observations"
         },
         {
-          "name": "QFLAG",
+          "name": "qflag",
           "description": "Quality Flag on NDVI 333m"
         }
       ],
@@ -248,7 +261,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(840d9cab-595d-4762-bc76-e6f4aa4fbdc1)/Nodes(c_gls_NDVI300_202007010000_GLOBE_OLCI_V2.0.1_nc)/Nodes(c_gls_NDVI300_202007010000_GLOBE_OLCI_V2.0.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(840d9cab-595d-4762-bc76-e6f4aa4fbdc1)/Nodes(c_gls_NDVI300_202007010000_GLOBE_OLCI_V2.0.1_nc)/Nodes(c_gls_NDVI300_202007010000_GLOBE_OLCI_V2.0.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

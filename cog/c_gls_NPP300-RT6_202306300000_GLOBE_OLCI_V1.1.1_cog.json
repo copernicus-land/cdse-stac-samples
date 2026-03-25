@@ -50,7 +50,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V1.1.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -97,6 +97,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/net-gross_primary_production/npp_global_300m_10daily_v1/2023/06/30/c_gls_NPP300-RT6_202306300000_GLOBE_OLCI_V1.1.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_NPP300-RT6_202306300000_GLOBE_OLCI_V1.1.1_cog",
       "type": "application/json",
@@ -112,7 +125,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "npp",
           "description": "Net Primary Production"
         }
       ],
@@ -129,7 +142,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(4c040099-dacc-42fc-a9c7-116a752d8524)/Nodes(c_gls_NPP300-RT6_202306300000_GLOBE_OLCI_V1.1.1_cog)/Nodes(c_gls_NPP300-NPP-RT6_202306300000_GLOBE_OLCI_V1.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(4c040099-dacc-42fc-a9c7-116a752d8524)/Nodes(c_gls_NPP300-RT6_202306300000_GLOBE_OLCI_V1.1.1_cog)/Nodes(c_gls_NPP300-NPP-RT6_202306300000_GLOBE_OLCI_V1.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -161,7 +174,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag",
           "description": "Quality Flag on Net Primary Production"
         }
       ],
@@ -178,7 +191,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(4c040099-dacc-42fc-a9c7-116a752d8524)/Nodes(c_gls_NPP300-RT6_202306300000_GLOBE_OLCI_V1.1.1_cog)/Nodes(c_gls_NPP300-QFLAG-RT6_202306300000_GLOBE_OLCI_V1.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(4c040099-dacc-42fc-a9c7-116a752d8524)/Nodes(c_gls_NPP300-RT6_202306300000_GLOBE_OLCI_V1.1.1_cog)/Nodes(c_gls_NPP300-QFLAG-RT6_202306300000_GLOBE_OLCI_V1.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

@@ -134,7 +134,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V1.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -181,6 +181,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/river_and_lake_ice_extent/lie_northernhemisphere_500m_daily_v1/2021/04/01/c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc",
       "type": "application/json",
@@ -196,11 +209,11 @@
       ],
       "bands": [
         {
-          "name": "LIE",
+          "name": "lie",
           "description": "Pixel classification"
         },
         {
-          "name": "P",
+          "name": "p",
           "description": "GMM predicted posterior probability of the most likely class"
         }
       ],
@@ -218,7 +231,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(55c94e7c-d346-41c0-9ef4-53f513036036)/Nodes(c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc)/Nodes(c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(55c94e7c-d346-41c0-9ef4-53f513036036)/Nodes(c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1_nc)/Nodes(c_gls_LIE-NH_202104010000_NHEMI_SLSTR_V1.1.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

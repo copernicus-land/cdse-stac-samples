@@ -50,7 +50,7 @@
     "product:timeliness_category": "OFFL",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -89,6 +89,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_europe_1km_daily_v1/2015/01/01/c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog",
       "type": "application/json",
@@ -104,7 +117,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag002",
           "description": "Quality Flag on Soil Water Index with T=2"
         }
       ],
@@ -122,7 +135,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG002_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG002_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -154,7 +167,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag005",
           "description": "Quality Flag on Soil Water Index with T=5"
         }
       ],
@@ -172,7 +185,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG005_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG005_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -204,7 +217,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag010",
           "description": "Quality Flag on Soil Water Index with T=10"
         }
       ],
@@ -222,7 +235,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG010_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG010_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -254,7 +267,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag015",
           "description": "Quality Flag on Soil Water Index with T=15"
         }
       ],
@@ -272,7 +285,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG015_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG015_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -304,7 +317,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag020",
           "description": "Quality Flag on Soil Water Index with T=20"
         }
       ],
@@ -322,7 +335,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG020_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG020_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -354,7 +367,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag040",
           "description": "Quality Flag on Soil Water Index with T=40"
         }
       ],
@@ -372,7 +385,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG040_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG040_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -404,7 +417,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag060",
           "description": "Quality Flag on Soil Water Index with T=60"
         }
       ],
@@ -422,7 +435,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG060_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG060_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -454,7 +467,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag100",
           "description": "Quality Flag on Soil Water Index with T=100"
         }
       ],
@@ -472,7 +485,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG100_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-QFLAG100_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -504,7 +517,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "ssf",
           "description": "Surface State Flag"
         }
       ],
@@ -522,7 +535,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SSF_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SSF_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -553,7 +566,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi002",
           "description": "Soil Water Index with T=2"
         }
       ],
@@ -571,7 +584,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI002_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI002_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -603,7 +616,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi005",
           "description": "Soil Water Index with T=5"
         }
       ],
@@ -621,7 +634,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI005_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI005_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -653,7 +666,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi010",
           "description": "Soil Water Index with T=10"
         }
       ],
@@ -671,7 +684,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI010_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI010_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -703,7 +716,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi015",
           "description": "Soil Water Index with T=15"
         }
       ],
@@ -721,7 +734,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI015_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI015_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -753,7 +766,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi020",
           "description": "Soil Water Index with T=20"
         }
       ],
@@ -771,7 +784,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI020_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI020_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -803,7 +816,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi040",
           "description": "Soil Water Index with T=40"
         }
       ],
@@ -821,7 +834,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI040_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI040_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -853,7 +866,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi060",
           "description": "Soil Water Index with T=60"
         }
       ],
@@ -871,7 +884,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI060_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI060_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -903,7 +916,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi100",
           "description": "Soil Water Index with T=100"
         }
       ],
@@ -921,7 +934,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI100_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(35bddd03-7887-4cdf-9ba9-682f2b9b9877)/Nodes(c_gls_SWI1km_201501011200_CEURO_SCATSAR_V1.0.1_cog)/Nodes(c_gls_SWI1km-SWI100_201501011200_CEURO_SCATSAR_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

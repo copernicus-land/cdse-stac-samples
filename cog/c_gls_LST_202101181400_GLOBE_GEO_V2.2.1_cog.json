@@ -53,7 +53,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V2.2.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -100,6 +100,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst_global_5km_hourly_v2/2021/01/18/c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog",
       "type": "application/json",
@@ -115,7 +128,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "errorbar",
           "description": "Standard error on Land Surface Temperature"
         }
       ],
@@ -133,7 +146,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-ERRORBAR_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-ERRORBAR_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -165,7 +178,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lst",
           "description": "Land Surface Temperature"
         }
       ],
@@ -183,7 +196,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-LST_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-LST_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -216,7 +229,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "ppp",
           "description": "Percentage of processed pixels on Land Surface Temperature"
         }
       ],
@@ -234,7 +247,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-PPP_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-PPP_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -265,7 +278,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag",
           "description": "Quality Flag on Land Surface Temperature"
         }
       ],
@@ -283,7 +296,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-QFLAG_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-QFLAG_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -314,7 +327,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tdelta",
           "description": "Time delta between observation and reference time on Land Surface Temperature"
         }
       ],
@@ -332,7 +345,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-TDELTA_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(69d49fba-ba8a-4602-a2c0-6090412267dd)/Nodes(c_gls_LST_202101181400_GLOBE_GEO_V2.2.1_cog)/Nodes(c_gls_LST-TDELTA_202101181400_GLOBE_GEO_V2.2.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

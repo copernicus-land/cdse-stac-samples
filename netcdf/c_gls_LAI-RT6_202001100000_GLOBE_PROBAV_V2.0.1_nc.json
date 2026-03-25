@@ -179,7 +179,7 @@
     "constellation": "proba-1",
     "processing:version": "V2.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -226,6 +226,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/lai_global_1km_10daily_v2/2020/01/10/c_gls_LAI-RT6_202001100000_GLOBE_PROBAV_V2.0.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LAI-RT6_202001100000_GLOBE_PROBAV_V2.0.1_nc",
       "type": "application/json",
@@ -241,27 +254,27 @@
       ],
       "bands": [
         {
-          "name": "LAI",
+          "name": "lai",
           "description": "Leaf Area Index 1km"
         },
         {
-          "name": "LENGTH_AFTER",
+          "name": "length_after",
           "description": "Length of semi-period after product date"
         },
         {
-          "name": "LENGTH_BEFORE",
+          "name": "length_before",
           "description": "Length of semi-period before product date"
         },
         {
-          "name": "NOBS",
+          "name": "nobs",
           "description": "leaf_area_index number_of_observations"
         },
         {
-          "name": "RMSE",
+          "name": "rmse",
           "description": "RMSE on LAI 1km"
         },
         {
-          "name": "QFLAG",
+          "name": "qflag",
           "description": "Quality flag on LAI 1km"
         }
       ],
@@ -278,7 +291,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(3f73d7be-2d3c-4b5d-9397-c9a26f88d7db)/Nodes(c_gls_LAI-RT6_202001100000_GLOBE_PROBAV_V2.0.1_nc)/Nodes(c_gls_LAI-RT6_202001100000_GLOBE_PROBAV_V2.0.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(3f73d7be-2d3c-4b5d-9397-c9a26f88d7db)/Nodes(c_gls_LAI-RT6_202001100000_GLOBE_PROBAV_V2.0.1_nc)/Nodes(c_gls_LAI-RT6_202001100000_GLOBE_PROBAV_V2.0.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

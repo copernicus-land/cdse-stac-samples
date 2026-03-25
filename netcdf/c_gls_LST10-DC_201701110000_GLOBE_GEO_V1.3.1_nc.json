@@ -162,7 +162,7 @@
     "product:timeliness_category": "OFFL",
     "processing:version": "V1.3.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -209,6 +209,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst-daily-cycle_global_5km_10daily_v1/2017/01/11/c_gls_LST10-DC_201701110000_GLOBE_GEO_V1.3.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LST10-DC_201701110000_GLOBE_GEO_V1.3.1_nc",
       "type": "application/json",
@@ -224,19 +237,19 @@
       ],
       "bands": [
         {
-          "name": "FRAC_VALID_OBS",
+          "name": "frac_valid_obs",
           "description": "Fraction of Valid Observations"
         },
         {
-          "name": "MAX",
+          "name": "max",
           "description": "LST Maximum"
         },
         {
-          "name": "MEDIAN",
+          "name": "median",
           "description": "LST Median"
         },
         {
-          "name": "MIN",
+          "name": "min",
           "description": "LST Minimum"
         }
       ],
@@ -254,7 +267,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(24ba0496-a33c-44ec-8918-defff89f2418)/Nodes(c_gls_LST10-DC_201701110000_GLOBE_GEO_V1.3.1_nc)/Nodes(c_gls_LST10-DC_201701110000_GLOBE_GEO_V1.3.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(24ba0496-a33c-44ec-8918-defff89f2418)/Nodes(c_gls_LST10-DC_201701110000_GLOBE_GEO_V1.3.1_nc)/Nodes(c_gls_LST10-DC_201701110000_GLOBE_GEO_V1.3.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

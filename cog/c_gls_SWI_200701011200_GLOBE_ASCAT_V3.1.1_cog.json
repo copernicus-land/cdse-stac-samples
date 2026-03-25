@@ -51,7 +51,7 @@
     "product:timeliness_category": "OFFL",
     "processing:version": "V3.1.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -62,41 +62,72 @@
     89.9999999
   ],
   "geometry": {
-    "type": "Polygon",
+    "type": "MultiPolygon",
     "coordinates": [
       [
         [
-          -179.9999999,
-          89.9999999
-        ],
+          [
+            -1e-8,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            89.9999999
+          ]
+        ]
+      ],
+      [
         [
-          -179.9999999,
-          -89.9999999
-        ],
-        [
-          0.0,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          89.9999999
-        ],
-        [
-          0.0,
-          89.9999999
-        ],
-        [
-          -179.9999999,
-          89.9999999
+          [
+            179.9999999,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            89.9999999
+          ]
         ]
       ]
     ]
   },
   "links": [
+    {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_daily_v3/2007/01/01/c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
     {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog",
@@ -113,7 +144,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag001",
           "description": "Quality Flag on Soil Water Index with T=1"
         }
       ],
@@ -131,7 +162,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG001_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG001_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -163,7 +194,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag005",
           "description": "Quality Flag on Soil Water Index with T=5"
         }
       ],
@@ -181,7 +212,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG005_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG005_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -213,7 +244,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag010",
           "description": "Quality Flag on Soil Water Index with T=10"
         }
       ],
@@ -231,7 +262,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG010_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG010_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -263,7 +294,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag015",
           "description": "Quality Flag on Soil Water Index with T=15"
         }
       ],
@@ -281,7 +312,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG015_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG015_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -313,7 +344,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag020",
           "description": "Quality Flag on Soil Water Index with T=20"
         }
       ],
@@ -331,7 +362,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG020_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG020_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -363,7 +394,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag040",
           "description": "Quality Flag on Soil Water Index with T=40"
         }
       ],
@@ -381,7 +412,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG040_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG040_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -413,7 +444,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag060",
           "description": "Quality Flag on Soil Water Index with T=60"
         }
       ],
@@ -431,7 +462,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG060_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG060_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -463,7 +494,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag100",
           "description": "Quality Flag on Soil Water Index with T=100"
         }
       ],
@@ -481,7 +512,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG100_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-QFLAG100_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -513,7 +544,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "ssf",
           "description": "Surface State Flag"
         }
       ],
@@ -531,7 +562,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SSF_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SSF_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -562,7 +593,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi001",
           "description": "Soil Water Index with T=1"
         }
       ],
@@ -580,7 +611,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI001_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI001_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -612,7 +643,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi005",
           "description": "Soil Water Index with T=5"
         }
       ],
@@ -630,7 +661,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI005_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI005_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -662,7 +693,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi010",
           "description": "Soil Water Index with T=10"
         }
       ],
@@ -680,7 +711,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI010_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI010_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -712,7 +743,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi015",
           "description": "Soil Water Index with T=15"
         }
       ],
@@ -730,7 +761,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI015_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI015_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -762,7 +793,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi020",
           "description": "Soil Water Index with T=20"
         }
       ],
@@ -780,7 +811,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI020_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI020_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -812,7 +843,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi040",
           "description": "Soil Water Index with T=40"
         }
       ],
@@ -830,7 +861,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI040_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI040_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -862,7 +893,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi060",
           "description": "Soil Water Index with T=60"
         }
       ],
@@ -880,7 +911,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI060_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI060_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -912,7 +943,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swi100",
           "description": "Soil Water Index with T=100"
         }
       ],
@@ -930,7 +961,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI100_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c1caf30e-8348-43b6-b693-d2a5b4b213a9)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_cog)/Nodes(c_gls_SWI-SWI100_200701011200_GLOBE_ASCAT_V3.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

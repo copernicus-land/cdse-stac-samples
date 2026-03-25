@@ -49,7 +49,7 @@
     "constellation": "proba-1",
     "processing:version": "V3.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -96,6 +96,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_indices/ndvi_global_1km_10daily_v3/2020/01/01/c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog",
       "type": "application/json",
@@ -111,7 +124,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "ndvi",
           "description": "Normalized Difference Vegetation Index"
         }
       ],
@@ -128,7 +141,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-NDVI_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-NDVI_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -161,7 +174,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobs",
           "description": "Number of observation"
         }
       ],
@@ -178,7 +191,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-NOBS_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-NOBS_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -209,7 +222,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag",
           "description": "Quality Flag on Normalized Difference Vegetation Index"
         }
       ],
@@ -227,7 +240,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-QFLAG_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-QFLAG_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -258,7 +271,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "timegrid",
           "description": "Time Grid"
         }
       ],
@@ -275,7 +288,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-TIMEGRID_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-TIMEGRID_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -306,7 +319,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "unc",
           "description": "Uncertainty on Normalized Difference Vegetation Index"
         }
       ],
@@ -323,7 +336,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-UNC_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(08bfb339-da8b-4bc4-baff-05af782d1e58)/Nodes(c_gls_NDVI_202001010000_GLOBE_PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-UNC_202001010000_GLOBE_PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

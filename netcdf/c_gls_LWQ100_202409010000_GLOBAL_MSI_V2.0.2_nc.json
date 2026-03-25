@@ -367,7 +367,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "2.0.2",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -378,41 +378,72 @@
     89.9999999
   ],
   "geometry": {
-    "type": "Polygon",
+    "type": "MultiPolygon",
     "coordinates": [
       [
         [
-          -179.9999999,
-          89.9999999
-        ],
+          [
+            -1e-8,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            89.9999999
+          ]
+        ]
+      ],
+      [
         [
-          -179.9999999,
-          -89.9999999
-        ],
-        [
-          0.0,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          89.9999999
-        ],
-        [
-          0.0,
-          89.9999999
-        ],
-        [
-          -179.9999999,
-          89.9999999
+          [
+            179.9999999,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            89.9999999
+          ]
         ]
       ]
     ]
   },
   "links": [
+    {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_water_quality/lwq-nrt_global_100m_10daily_v2/2024/09/01/c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
     {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_nc",
@@ -429,59 +460,59 @@
       ],
       "bands": [
         {
-          "name": "Rw1375_rep",
+          "name": "rw1375_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 1375 nm"
         },
         {
-          "name": "Rw1610_rep",
+          "name": "rw1610_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 1610 nm"
         },
         {
-          "name": "Rw2190_rep",
+          "name": "rw2190_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 2190 nm"
         },
         {
-          "name": "Rw443_rep",
+          "name": "rw443_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 443 nm"
         },
         {
-          "name": "Rw490_rep",
+          "name": "rw490_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 490 nm"
         },
         {
-          "name": "Rw560_rep",
+          "name": "rw560_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 560 nm"
         },
         {
-          "name": "Rw665_rep",
+          "name": "rw665_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 665 nm"
         },
         {
-          "name": "Rw705_rep",
+          "name": "rw705_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 705 nm"
         },
         {
-          "name": "Rw740_rep",
+          "name": "rw740_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 740 nm"
         },
         {
-          "name": "Rw783_rep",
+          "name": "rw783_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 783 nm"
         },
         {
-          "name": "Rw842_rep",
+          "name": "rw842_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 842 nm"
         },
         {
-          "name": "Rw865_rep",
+          "name": "rw865_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 865 nm"
         },
         {
-          "name": "Rw945_rep",
+          "name": "rw945_rep",
           "description": "Representative spectrum of fully normalized water-leaving reflectance at 945 nm"
         },
         {
-          "name": "RwDayNum_rep",
+          "name": "rwdaynum_rep",
           "description": "age in days after the start of the observation period of the most representative water-leaving reflectance spectrum"
         },
         {
@@ -534,7 +565,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(bebc4f61-98aa-44db-ae37-c893f0a49222)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_nc)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(bebc4f61-98aa-44db-ae37-c893f0a49222)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2_nc)/Nodes(c_gls_LWQ100_202409010000_GLOBAL_MSI_V2.0.2.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

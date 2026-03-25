@@ -49,7 +49,7 @@
     "constellation": "proba-1",
     "processing:version": "V2.1.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -96,6 +96,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/water_bodies/wb_global_1km_10daily_v2/2018/01/01/c_gls_WB_201801010000_GLOBE_PROBAV_V2.1.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_WB_201801010000_GLOBE_PROBAV_V2.1.1_cog",
       "type": "application/json",
@@ -111,7 +124,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qual",
           "description": "Quality Flag on Water Bodies"
         }
       ],
@@ -129,7 +142,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c7850dd0-e411-45e3-a856-155a6f11f253)/Nodes(c_gls_WB_201801010000_GLOBE_PROBAV_V2.1.1_cog)/Nodes(c_gls_WB-QUAL_201801010000_GLOBE_PROBAV_V2.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c7850dd0-e411-45e3-a856-155a6f11f253)/Nodes(c_gls_WB_201801010000_GLOBE_PROBAV_V2.1.1_cog)/Nodes(c_gls_WB-QUAL_201801010000_GLOBE_PROBAV_V2.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -160,7 +173,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "wb",
           "description": "Water Bodies"
         }
       ],
@@ -178,7 +191,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c7850dd0-e411-45e3-a856-155a6f11f253)/Nodes(c_gls_WB_201801010000_GLOBE_PROBAV_V2.1.1_cog)/Nodes(c_gls_WB-WB_201801010000_GLOBE_PROBAV_V2.1.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c7850dd0-e411-45e3-a856-155a6f11f253)/Nodes(c_gls_WB_201801010000_GLOBE_PROBAV_V2.1.1_cog)/Nodes(c_gls_WB-WB_201801010000_GLOBE_PROBAV_V2.1.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

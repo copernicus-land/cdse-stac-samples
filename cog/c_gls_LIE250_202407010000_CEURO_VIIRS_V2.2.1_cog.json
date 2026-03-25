@@ -50,7 +50,7 @@
     "product:timeliness": "P2D",
     "product:timeliness_category": "NRT",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -89,6 +89,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/river_and_lake_ice_extent/lie_europe_250m_daily_v2/2024/07/01/c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog",
       "type": "application/json",
@@ -104,7 +117,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lie",
           "description": "Lake Ice Extent"
         }
       ],
@@ -122,7 +135,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(0188c765-3e91-4194-aae7-aa7b131407c0)/Nodes(c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog)/Nodes(c_gls_LIE250-LIE_202407010000_CEURO_VIIRS_V2.2.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(0188c765-3e91-4194-aae7-aa7b131407c0)/Nodes(c_gls_LIE250_202407010000_CEURO_VIIRS_V2.2.1_cog)/Nodes(c_gls_LIE250-LIE_202407010000_CEURO_VIIRS_V2.2.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

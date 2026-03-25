@@ -51,7 +51,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "1.0.3",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -62,41 +62,72 @@
     89.9999999
   ],
   "geometry": {
-    "type": "Polygon",
+    "type": "MultiPolygon",
     "coordinates": [
       [
         [
-          -179.9999999,
-          89.9999999
-        ],
+          [
+            -1e-8,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            89.9999999
+          ]
+        ]
+      ],
+      [
         [
-          -179.9999999,
-          -89.9999999
-        ],
-        [
-          0.0,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          89.9999999
-        ],
-        [
-          0.0,
-          89.9999999
-        ],
-        [
-          -179.9999999,
-          89.9999999
+          [
+            179.9999999,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            89.9999999
+          ]
         ]
       ]
     ]
   },
   "links": [
+    {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/lake_surface_water_temperature/lswt-nrt_global_1km_10daily_v1/2016/11/01/c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
     {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog",
@@ -113,7 +144,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lswt",
           "description": "Lake Surface Water Temperature"
         }
       ],
@@ -131,7 +162,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-LSWT_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-LSWT_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -164,7 +195,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobs",
           "description": "Number of observation"
         }
       ],
@@ -182,7 +213,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-NOBS_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-NOBS_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -213,7 +244,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qlevel",
           "description": "Quality Level of Lake Surface Water Temperature"
         }
       ],
@@ -231,7 +262,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-QLEVEL_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-QLEVEL_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -262,7 +293,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "stdev",
           "description": "Standar deviation Lake Surface Water Temperature"
         }
       ],
@@ -280,7 +311,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-STDEV_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-STDEV_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -312,7 +343,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tobs",
           "description": "Observation day within 10-daily period of Lake Surface Water Temperature"
         }
       ],
@@ -330,7 +361,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-TOBS_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-TOBS_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -361,7 +392,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "unc",
           "description": "Uncertainty on Lake Surface Water Temperature"
         }
       ],
@@ -379,7 +410,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-UNC_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(db75b52c-ba5b-418d-bdd5-eb91c4ab7915)/Nodes(c_gls_LSWT_201611010000_GLOBE_SLSTRA_v1.0.3_cog)/Nodes(c_gls_LSWT-UNC_201611010000_GLOBE_SLSTRA_v1.0.3.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

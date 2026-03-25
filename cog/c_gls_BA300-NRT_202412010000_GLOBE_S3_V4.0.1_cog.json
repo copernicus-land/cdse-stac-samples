@@ -51,7 +51,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V4.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -98,6 +98,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/burnt_area/ba_global_300m_daily_v4/2024/12/01/c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog",
       "type": "application/json",
@@ -113,7 +126,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "bf_nrt",
           "description": "Fraction of pixel surface affected by fire at the day of the burn detection"
         }
       ],
@@ -130,7 +143,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-BF-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-BF-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -162,7 +175,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "cp_nrt",
           "description": "Probability that the burn detection corresponds to an actual burn"
         }
       ],
@@ -179,7 +192,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-CP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-CP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -211,7 +224,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "dob_nrt",
           "description": "Day of burn in year (1-366), no burn (0) or flag (<0)"
         }
       ],
@@ -228,7 +241,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-DOB-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-DOB-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -259,7 +272,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lfp_nrt",
           "description": "Probability that the fractional burned area is above 0.1"
         }
       ],
@@ -276,7 +289,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-LFP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(5b5718d9-23a3-40a1-83f9-032094fbebcd)/Nodes(c_gls_BA300-NRT_202412010000_GLOBE_S3_V4.0.1_cog)/Nodes(c_gls_BA300-LFP-NRT_202412010000_GLOBE_S3_V4.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

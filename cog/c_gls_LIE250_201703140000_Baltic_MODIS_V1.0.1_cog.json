@@ -51,7 +51,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -90,6 +90,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/river_and_lake_ice_extent/lie_baltic_250m_daily_v1/2017/03/14/c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog",
       "type": "application/json",
@@ -105,7 +118,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lie",
           "description": "Lake Ice Extent"
         }
       ],
@@ -123,7 +136,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(3c78fc78-6509-4d03-b605-f0c86ed67faf)/Nodes(c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog)/Nodes(c_gls_LIE250-LIE_201703140000_Baltic_MODIS_V1.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(3c78fc78-6509-4d03-b605-f0c86ed67faf)/Nodes(c_gls_LIE250_201703140000_Baltic_MODIS_V1.0.1_cog)/Nodes(c_gls_LIE250-LIE_201703140000_Baltic_MODIS_V1.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

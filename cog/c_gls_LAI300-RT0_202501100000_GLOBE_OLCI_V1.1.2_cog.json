@@ -50,7 +50,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V1.1.2",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -97,6 +97,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/lai_global_300m_10daily_v1/2025/01/10/c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog",
       "type": "application/json",
@@ -112,7 +125,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lafter",
           "description": "Length of semi-period after product date on Leaf Area Index"
         }
       ],
@@ -129,7 +142,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-LAFTER-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-LAFTER-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -160,7 +173,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lai",
           "description": "Leaf Area Index"
         }
       ],
@@ -177,7 +190,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-LAI-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-LAI-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -209,7 +222,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lbefore",
           "description": "Length of semi-period before product date on Leaf Area Index"
         }
       ],
@@ -226,7 +239,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-LBEFORE-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-LBEFORE-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -257,7 +270,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobs",
           "description": "Number of observation"
         }
       ],
@@ -274,7 +287,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-NOBS-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-NOBS-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -305,7 +318,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag",
           "description": "Quality Flag on Leaf Area Index"
         }
       ],
@@ -322,7 +335,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-QFLAG-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-QFLAG-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -353,7 +366,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rmse",
           "description": "Root Mean Square Error on Leaf Area Index"
         }
       ],
@@ -370,7 +383,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-RMSE-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(b551825f-77aa-4b46-ab51-6b391236c92f)/Nodes(c_gls_LAI300-RT0_202501100000_GLOBE_OLCI_V1.1.2_cog)/Nodes(c_gls_LAI300-RMSE-RT0_202501100000_GLOBE_OLCI_V1.1.2.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

@@ -50,7 +50,7 @@
     "product:timeliness_category": "OFFL",
     "processing:version": "V1.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -97,6 +97,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/evapotranspiration/eta_global_300m_10daily_v1/2025/11/01/clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog",
       "type": "application/json",
@@ -112,7 +125,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "ensemble",
           "description": "Dekadal actual evaporation (from soil) Ensemble (average)"
         }
       ],
@@ -129,7 +142,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_E-ENSEMBLE_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_E-ENSEMBLE_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -161,7 +174,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "etlook",
           "description": "Dekadal actual evaporation (from soil) ETLook"
         }
       ],
@@ -178,7 +191,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_E-ETLOOK_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_E-ETLOOK_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -210,7 +223,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "std",
           "description": "Dekadal actual evaporation (from soil) Standard Deviation (Ensemble)"
         }
       ],
@@ -227,7 +240,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_E-STD_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_E-STD_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -259,7 +272,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tsebpt",
           "description": "Dekadal actual evaporation (from soil) TSEB-PT"
         }
       ],
@@ -276,7 +289,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_E-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_E-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -308,7 +321,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "ensemble",
           "description": "Dekadal actual evapotranspiration Ensemble (average)"
         }
       ],
@@ -325,7 +338,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_ET-ENSEMBLE_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_ET-ENSEMBLE_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -357,7 +370,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "etlook",
           "description": "Dekadal actual evapotranspiration ETLook"
         }
       ],
@@ -374,7 +387,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_ET-ETLOOK_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_ET-ETLOOK_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -406,7 +419,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "std",
           "description": "Dekadal actual evapotranspiration Standard Deviation (Ensemble)"
         }
       ],
@@ -423,7 +436,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_ET-STD_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_ET-STD_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -455,7 +468,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tsebpt",
           "description": "Dekadal actual evapotranspiration TSEB-PT"
         }
       ],
@@ -472,7 +485,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_ET-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_ET-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -504,7 +517,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "flag",
           "description": "Annotation flags"
         }
       ],
@@ -521,7 +534,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_FLAG_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_FLAG_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -552,7 +565,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "gfd",
           "description": "Gap-filling distance"
         }
       ],
@@ -569,7 +582,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_GFD_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_GFD_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -600,7 +613,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobs",
           "description": "Number of cloud free observations in a given dekade"
         }
       ],
@@ -617,7 +630,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_NOBS_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_NOBS_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -648,7 +661,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "ensemble",
           "description": "Dekadal actual transpiration (from canopy) Ensemble (average)"
         }
       ],
@@ -665,7 +678,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_T-ENSEMBLE_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_T-ENSEMBLE_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -697,7 +710,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "etlook",
           "description": "Dekadal actual transpiration (from canopy) ETLook"
         }
       ],
@@ -714,7 +727,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_T-ETLOOK_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_T-ETLOOK_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -746,7 +759,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "std",
           "description": "Dekadal actual transpiration (from canopy) Standard Deviation (Ensemble)"
         }
       ],
@@ -763,7 +776,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_T-STD_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_T-STD_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -795,7 +808,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "tsebpt",
           "description": "Dekadal actual transpiration (from canopy) TSEB-PT"
         }
       ],
@@ -812,7 +825,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_T-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a2d2e5a9-1bf7-46b6-84dd-60bf68f129bf)/Nodes(clms_ETA300_202511010000_GLOBE_S3_V1.0.1_cog)/Nodes(clms_ETA300_T-TSEBPT_202511010000_GLOBE_S3_V1.0.1.tif)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

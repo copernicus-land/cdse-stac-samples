@@ -317,7 +317,7 @@
     "product:timeliness_category": "OFFL",
     "processing:version": "V3.1.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -328,41 +328,72 @@
     89.9999999
   ],
   "geometry": {
-    "type": "Polygon",
+    "type": "MultiPolygon",
     "coordinates": [
       [
         [
-          -179.9999999,
-          89.9999999
-        ],
+          [
+            -1e-8,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            89.9999999
+          ]
+        ]
+      ],
+      [
         [
-          -179.9999999,
-          -89.9999999
-        ],
-        [
-          0.0,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          89.9999999
-        ],
-        [
-          0.0,
-          89.9999999
-        ],
-        [
-          -179.9999999,
-          89.9999999
+          [
+            179.9999999,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            89.9999999
+          ]
         ]
       ]
     ]
   },
   "links": [
+    {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_daily_v3/2007/01/01/c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
     {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_nc",
@@ -379,71 +410,71 @@
       ],
       "bands": [
         {
-          "name": "SWI_005",
+          "name": "swi_005",
           "description": "Soil Water Index with T=5"
         },
         {
-          "name": "SWI_010",
+          "name": "swi_010",
           "description": "Soil Water Index with T=10"
         },
         {
-          "name": "SWI_001",
+          "name": "swi_001",
           "description": "Soil Water Index with T=1"
         },
         {
-          "name": "SWI_015",
+          "name": "swi_015",
           "description": "Soil Water Index with T=15"
         },
         {
-          "name": "SWI_100",
+          "name": "swi_100",
           "description": "Soil Water Index with T=100"
         },
         {
-          "name": "SWI_040",
+          "name": "swi_040",
           "description": "Soil Water Index with T=40"
         },
         {
-          "name": "SWI_060",
+          "name": "swi_060",
           "description": "Soil Water Index with T=60"
         },
         {
-          "name": "SWI_020",
+          "name": "swi_020",
           "description": "Soil Water Index with T=20"
         },
         {
-          "name": "QFLAG_040",
+          "name": "qflag_040",
           "description": "Quality Flag with T=40"
         },
         {
-          "name": "QFLAG_010",
+          "name": "qflag_010",
           "description": "Quality Flag with T=10"
         },
         {
-          "name": "QFLAG_015",
+          "name": "qflag_015",
           "description": "Quality Flag with T=15"
         },
         {
-          "name": "QFLAG_100",
+          "name": "qflag_100",
           "description": "Quality Flag with T=100"
         },
         {
-          "name": "QFLAG_020",
+          "name": "qflag_020",
           "description": "Quality Flag with T=20"
         },
         {
-          "name": "QFLAG_005",
+          "name": "qflag_005",
           "description": "Quality Flag with T=5"
         },
         {
-          "name": "QFLAG_001",
+          "name": "qflag_001",
           "description": "Quality Flag with T=1"
         },
         {
-          "name": "QFLAG_060",
+          "name": "qflag_060",
           "description": "Quality Flag with T=60"
         },
         {
-          "name": "SSF",
+          "name": "ssf",
           "description": "Surface State Flag"
         }
       ],
@@ -461,7 +492,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(1a63419d-3369-4655-89ad-c372852728f1)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_nc)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(1a63419d-3369-4655-89ad-c372852728f1)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1_nc)/Nodes(c_gls_SWI_200701011200_GLOBE_ASCAT_V3.1.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

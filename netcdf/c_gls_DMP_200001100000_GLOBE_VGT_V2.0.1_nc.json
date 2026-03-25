@@ -135,7 +135,7 @@
     "constellation": "spot",
     "processing:version": "V2.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -182,6 +182,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/dry-gross_dry_matter_productivity/dmp_global_1km_10daily_v2/2000/01/10/c_gls_DMP_200001100000_GLOBE_VGT_V2.0.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_DMP_200001100000_GLOBE_VGT_V2.0.1_nc",
       "type": "application/json",
@@ -197,11 +210,11 @@
       ],
       "bands": [
         {
-          "name": "DMP",
+          "name": "dmp",
           "description": "Dry matter productivity 1KM"
         },
         {
-          "name": "QFLAG",
+          "name": "qflag",
           "description": "Quality flag on DMP 1KM"
         }
       ],
@@ -218,7 +231,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(2267e94f-0929-482f-8743-98b8730b73fa)/Nodes(c_gls_DMP_200001100000_GLOBE_VGT_V2.0.1_nc)/Nodes(c_gls_DMP_200001100000_GLOBE_VGT_V2.0.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(2267e94f-0929-482f-8743-98b8730b73fa)/Nodes(c_gls_DMP_200001100000_GLOBE_VGT_V2.0.1_nc)/Nodes(c_gls_DMP_200001100000_GLOBE_VGT_V2.0.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

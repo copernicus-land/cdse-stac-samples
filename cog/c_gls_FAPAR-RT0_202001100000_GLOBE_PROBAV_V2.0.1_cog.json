@@ -49,7 +49,7 @@
     "constellation": "proba-1",
     "processing:version": "V2.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -96,6 +96,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_properties/fapar_global_1km_10daily_v2/2020/01/10/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog",
       "type": "application/json",
@@ -111,7 +124,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "fapar",
           "description": "Fraction of Absorbed Photosynthetically Active Radiation"
         }
       ],
@@ -128,7 +141,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -160,7 +173,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lafter",
           "description": "Length of semi-period after product date on Fraction of Absorbed Photosynthetically Active Radiation"
         }
       ],
@@ -178,7 +191,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-LAFTER-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-LAFTER-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -209,7 +222,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "lbefore",
           "description": "Length of semi-period before product date on Fraction of Absorbed Photosynthetically Active Radiation"
         }
       ],
@@ -226,7 +239,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-LBEFORE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-LBEFORE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -257,7 +270,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobs",
           "description": "Number of observation"
         }
       ],
@@ -274,7 +287,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-NOBS-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-NOBS-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -305,7 +318,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "qflag",
           "description": "Quality Flag on Fraction of Absorbed Photosynthetically Active Radiation"
         }
       ],
@@ -323,7 +336,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-QFLAG-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-QFLAG-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -354,7 +367,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "rmse",
           "description": "Root Mean Square Error on Fraction of Absorbed Photosynthetically Active Radiation"
         }
       ],
@@ -371,7 +384,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-RMSE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(f28e8170-18a2-40e7-a871-75cd1333540d)/Nodes(c_gls_FAPAR-RT0_202001100000_GLOBE_PROBAV_V2.0.1_cog)/Nodes(c_gls_FAPAR-RMSE-RT0_202001100000_GLOBE_PROBAV_V2.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

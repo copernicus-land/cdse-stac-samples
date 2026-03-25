@@ -135,7 +135,7 @@
     "constellation": "spot",
     "processing:version": "V2.2.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -182,6 +182,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_indices/ndvi_global_1km_10daily_v2/1998/04/01/c_gls_NDVI_199804010000_GLOBE_VGT_V2.2.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_NDVI_199804010000_GLOBE_VGT_V2.2.1_nc",
       "type": "application/json",
@@ -197,11 +210,11 @@
       ],
       "bands": [
         {
-          "name": "NDVI",
+          "name": "ndvi",
           "description": "Normalized Difference Vegetation Index 1KM"
         },
         {
-          "name": "TIME_GRID",
+          "name": "time_grid",
           "description": "Time Grid"
         }
       ],
@@ -218,7 +231,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(764c5f21-673b-4d43-876c-57b38273efa7)/Nodes(c_gls_NDVI_199804010000_GLOBE_VGT_V2.2.1_nc)/Nodes(c_gls_NDVI_199804010000_GLOBE_VGT_V2.2.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(764c5f21-673b-4d43-876c-57b38273efa7)/Nodes(c_gls_NDVI_199804010000_GLOBE_VGT_V2.2.1_nc)/Nodes(c_gls_NDVI_199804010000_GLOBE_VGT_V2.2.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

@@ -174,7 +174,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V1.3.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -221,6 +221,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst_global_5km_hourly_v1/2010/06/20/c_gls_LST_201006200100_GLOBE_GEO_V1.3.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_LST_201006200100_GLOBE_GEO_V1.3.1_nc",
       "type": "application/json",
@@ -236,23 +249,23 @@
       ],
       "bands": [
         {
-          "name": "ERRORBAR_LST",
+          "name": "errorbar_lst",
           "description": "LST Error Bar"
         },
         {
-          "name": "LST",
+          "name": "lst",
           "description": "Land Surface Temperature"
         },
         {
-          "name": "PERCENT_PROC_PIXELS",
+          "name": "percent_proc_pixels",
           "description": "LST Percentage of Processed Pixels"
         },
         {
-          "name": "Q_FLAGS",
+          "name": "q_flags",
           "description": "LST Quality Flags"
         },
         {
-          "name": "TIME_DELTA",
+          "name": "time_delta",
           "description": "LST Time Deltas"
         }
       ],
@@ -270,7 +283,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(2dda150b-baaa-48a0-8cf5-9fc3e5fb9aca)/Nodes(c_gls_LST_201006200100_GLOBE_GEO_V1.3.1_nc)/Nodes(c_gls_LST_201006200100_GLOBE_GEO_V1.3.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(2dda150b-baaa-48a0-8cf5-9fc3e5fb9aca)/Nodes(c_gls_LST_201006200100_GLOBE_GEO_V1.3.1_nc)/Nodes(c_gls_LST_201006200100_GLOBE_GEO_V1.3.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

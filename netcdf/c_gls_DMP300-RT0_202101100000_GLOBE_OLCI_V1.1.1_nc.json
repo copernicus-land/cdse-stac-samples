@@ -136,7 +136,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V1.1.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -183,6 +183,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/dry-gross_dry_matter_productivity/dmp_global_300m_10daily_v1/2021/01/10/c_gls_DMP300-RT0_202101100000_GLOBE_OLCI_V1.1.1_nc/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_DMP300-RT0_202101100000_GLOBE_OLCI_V1.1.1_nc",
       "type": "application/json",
@@ -198,11 +211,11 @@
       ],
       "bands": [
         {
-          "name": "DMP",
+          "name": "dmp",
           "description": "Dry Matter Productivity 333m"
         },
         {
-          "name": "QFLAG",
+          "name": "qflag",
           "description": "Quality Flag on DMP 333m"
         }
       ],
@@ -219,7 +232,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(6d8b0389-daff-4ef0-9857-44b9ea23b32e)/Nodes(c_gls_DMP300-RT0_202101100000_GLOBE_OLCI_V1.1.1_nc)/Nodes(c_gls_DMP300-RT0_202101100000_GLOBE_OLCI_V1.1.1.nc)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(6d8b0389-daff-4ef0-9857-44b9ea23b32e)/Nodes(c_gls_DMP300-RT0_202101100000_GLOBE_OLCI_V1.1.1_nc)/Nodes(c_gls_DMP300-RT0_202101100000_GLOBE_OLCI_V1.1.1.nc)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

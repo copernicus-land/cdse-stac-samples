@@ -47,7 +47,7 @@
     "processing:level": "L4",
     "processing:version": "V3.2.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -58,41 +58,72 @@
     89.9999999
   ],
   "geometry": {
-    "type": "Polygon",
+    "type": "MultiPolygon",
     "coordinates": [
       [
         [
-          -179.9999999,
-          89.9999999
-        ],
+          [
+            -1e-8,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            -89.9999999
+          ],
+          [
+            -179.9999999,
+            89.9999999
+          ],
+          [
+            -1e-8,
+            89.9999999
+          ]
+        ]
+      ],
+      [
         [
-          -179.9999999,
-          -89.9999999
-        ],
-        [
-          0.0,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          -89.9999999
-        ],
-        [
-          179.9999999,
-          89.9999999
-        ],
-        [
-          0.0,
-          89.9999999
-        ],
-        [
-          -179.9999999,
-          89.9999999
+          [
+            179.9999999,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            -89.9999999
+          ],
+          [
+            1e-8,
+            89.9999999
+          ],
+          [
+            179.9999999,
+            89.9999999
+          ]
         ]
       ]
     ]
   },
   "links": [
+    {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/soil_water_index/swi-static_global_12.5km_daily_v3/2007/01/01/c_gls_SWI-STATIC-CI_200701010000_GLOBE_SWI-GLDAS_V3.2.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
     {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SWI-STATIC-CI_200701010000_GLOBE_SWI-GLDAS_V3.2.1_cog",
@@ -109,7 +140,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "static_ci",
           "description": "Pearson Correlation between SWI and GLDAS NOAH version 1 average layer 1 soil moisture"
         }
       ],
@@ -127,7 +158,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(8b162e90-9f38-4058-b06b-785e8e077fa7)/Nodes(c_gls_SWI-STATIC-CI_200701010000_GLOBE_SWI-GLDAS_V3.2.1_cog)/Nodes(c_gls_SWI-STATIC-CI_200701010000_GLOBE_SWI-GLDAS_V3.2.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(8b162e90-9f38-4058-b06b-785e8e077fa7)/Nodes(c_gls_SWI-STATIC-CI_200701010000_GLOBE_SWI-GLDAS_V3.2.1_cog)/Nodes(c_gls_SWI-STATIC-CI_200701010000_GLOBE_SWI-GLDAS_V3.2.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

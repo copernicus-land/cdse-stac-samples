@@ -49,7 +49,7 @@
     "processing:level": "L4",
     "processing:version": "V3.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -96,6 +96,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/vegetation_indices/ndvi-lts_global_1km_10daily_v3/1999/01/01/c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog",
       "type": "application/json",
@@ -111,7 +124,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "max_lts",
           "description": "Maximum Normalized Difference Vegetation Index over time period"
         }
       ],
@@ -128,7 +141,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-MAX-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-MAX-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -161,7 +174,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "mean_lts",
           "description": "Mean Normalized Difference Vegetation Index over time period"
         }
       ],
@@ -178,7 +191,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-MEAN-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-MEAN-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -211,7 +224,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "median_lts",
           "description": "Median Normalized Difference Vegetation Index over time period"
         }
       ],
@@ -228,7 +241,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-MEDIAN-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-MEDIAN-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -261,7 +274,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "min_lts",
           "description": "Minimum Normalized Difference Vegetation Index over time period"
         }
       ],
@@ -278,7 +291,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-MIN-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-MIN-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -311,7 +324,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "nobs_lts",
           "description": "Number of observation"
         }
       ],
@@ -328,7 +341,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-NOBS-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-NOBS-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -359,7 +372,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "stdev_lts",
           "description": "Standard deviation Normalized Difference Vegetation Index over time period"
         }
       ],
@@ -376,7 +389,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-STDEV-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c98dd0eb-b586-4d24-a6d3-475cb29da354)/Nodes(c_gls_NDVI-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1_cog)/Nodes(c_gls_NDVI-STDEV-LTS_1999-2019-0101_GLOBE_VGT-PROBAV_V3.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"

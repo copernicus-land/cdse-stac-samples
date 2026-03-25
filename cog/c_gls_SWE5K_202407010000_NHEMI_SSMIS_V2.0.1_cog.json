@@ -50,7 +50,7 @@
     "product:timeliness_category": "NRT",
     "processing:version": "V2.0.1",
     "processing:software": {
-      "eometadatatool": "260316163011+dirty"
+      "eometadatatool": "260324115141+dirty"
     },
     "expires": "2262-01-01T00:00:00.000000Z"
   },
@@ -97,6 +97,19 @@
   },
   "links": [
     {
+      "rel": "enclosure",
+      "href": "s3://eodata/CLMS/bio-geophysical/snow_water_equivalent/swe_northernhemisphere_5km_daily_v2/2024/07/01/c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog/",
+      "type": "application/x-directory",
+      "title": "S3 path to source directory",
+      "auth:refs": [
+        "s3"
+      ],
+      "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+      ]
+    },
+    {
       "rel": "version-history",
       "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog",
       "type": "application/json",
@@ -112,7 +125,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "swe",
           "description": "Snow Water Equivalent"
         }
       ],
@@ -130,7 +143,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(117a36db-3fd7-4da6-a4ee-9ec599ceb994)/Nodes(c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog)/Nodes(c_gls_SWE5K-SWE_202407010000_NHEMI_SSMIS_V2.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(117a36db-3fd7-4da6-a4ee-9ec599ceb994)/Nodes(c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog)/Nodes(c_gls_SWE5K-SWE_202407010000_NHEMI_SSMIS_V2.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
@@ -161,7 +174,7 @@
       ],
       "bands": [
         {
-          "name": "Band 1",
+          "name": "var",
           "description": "Variance of Snow Water Equivalent"
         }
       ],
@@ -179,7 +192,7 @@
       ],
       "alternate": {
         "https": {
-          "href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(117a36db-3fd7-4da6-a4ee-9ec599ceb994)/Nodes(c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog)/Nodes(c_gls_SWE5K-VAR_202407010000_NHEMI_SSMIS_V2.0.1.tiff)/$value",
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(117a36db-3fd7-4da6-a4ee-9ec599ceb994)/Nodes(c_gls_SWE5K_202407010000_NHEMI_SSMIS_V2.0.1_cog)/Nodes(c_gls_SWE5K-VAR_202407010000_NHEMI_SSMIS_V2.0.1.tiff)/$value",
           "alternate:name": "HTTPS",
           "auth:refs": [
             "oidc"
